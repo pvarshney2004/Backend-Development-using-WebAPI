@@ -1,0 +1,934 @@
+2026-03-19 14:42:44.200 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-19 14:42:44.716 +05:30 [INF] Now listening on: https://localhost:7143
+2026-03-19 14:42:44.720 +05:30 [INF] Now listening on: http://localhost:5161
+2026-03-19 14:42:44.835 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-19 14:42:44.837 +05:30 [INF] Hosting environment: Development
+2026-03-19 14:42:44.840 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\TaskManagerAPIs_Review\TaskManagerAPIs_Review
+2026-03-19 14:42:45.494 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - null null
+2026-03-19 14:42:46.155 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - 200 null text/html;charset=utf-8 672.6275ms
+2026-03-19 14:42:46.224 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_vs/browserLink - null null
+2026-03-19 14:42:46.224 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-19 14:42:46.297 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 73.4679ms
+2026-03-19 14:42:46.361 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_vs/browserLink - 200 null text/javascript; charset=UTF-8 138.179ms
+2026-03-19 14:42:46.433 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - null null
+2026-03-19 14:42:46.472 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 40.0864ms
+2026-03-19 14:48:59.163 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-19 14:48:59.710 +05:30 [INF] Now listening on: https://localhost:7143
+2026-03-19 14:48:59.714 +05:30 [INF] Now listening on: http://localhost:5161
+2026-03-19 14:48:59.918 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-19 14:48:59.921 +05:30 [INF] Hosting environment: Development
+2026-03-19 14:48:59.924 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\TaskManagerAPIs_Review\TaskManagerAPIs_Review
+2026-03-19 14:49:00.854 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - null null
+2026-03-19 14:49:01.323 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - 200 null text/html;charset=utf-8 482.5403ms
+2026-03-19 14:49:01.388 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_vs/browserLink - null null
+2026-03-19 14:49:01.388 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-19 14:49:01.441 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 53.1817ms
+2026-03-19 14:49:01.505 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_vs/browserLink - 200 null text/javascript; charset=UTF-8 117.1099ms
+2026-03-19 14:49:01.635 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - null null
+2026-03-19 14:49:01.717 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 85.5215ms
+2026-03-19 14:49:23.931 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Task - null null
+2026-03-19 14:49:24.104 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-03-19 14:49:24.116 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-03-19 14:49:24.120 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Task - 401 0 null 189.1937ms
+2026-03-19 14:51:58.951 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-19 14:51:59.397 +05:30 [INF] Now listening on: https://localhost:7143
+2026-03-19 14:51:59.399 +05:30 [INF] Now listening on: http://localhost:5161
+2026-03-19 14:51:59.610 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-19 14:51:59.612 +05:30 [INF] Hosting environment: Development
+2026-03-19 14:51:59.615 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\TaskManagerAPIs_Review\TaskManagerAPIs_Review
+2026-03-19 14:52:00.845 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - null null
+2026-03-19 14:52:01.286 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - 200 null text/html;charset=utf-8 451.9206ms
+2026-03-19 14:52:01.343 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-19 14:52:01.343 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_vs/browserLink - null null
+2026-03-19 14:52:01.366 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 24.2617ms
+2026-03-19 14:52:01.452 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_vs/browserLink - 200 null text/javascript; charset=UTF-8 112.7115ms
+2026-03-19 14:52:01.518 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - null null
+2026-03-19 14:52:01.549 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 30.7405ms
+2026-03-19 14:52:07.275 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Task - null null
+2026-03-19 14:52:07.456 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-03-19 14:52:07.466 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-03-19 14:52:07.470 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Task - 401 0 null 198.979ms
+2026-03-19 14:52:20.737 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Auth/login - application/json 56
+2026-03-19 14:52:20.752 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 14:52:20.785 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(TaskManagerAPIs_Review.DTOs.Auth.LoginDTO) on controller TaskManagerAPIs_Review.Controllers.AuthController (TaskManagerAPIs_Review).
+2026-03-19 14:52:22.866 +05:30 [INF] Executed DbCommand (52ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2026-03-19 14:52:23.032 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-19 14:52:23.049 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review) in 2249.4212ms
+2026-03-19 14:52:23.053 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 14:52:23.070 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Auth/login - 200 null application/json; charset=utf-8 2333.1627ms
+2026-03-19 14:52:37.292 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Task - null null
+2026-03-19 14:52:37.374 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TaskController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 14:52:37.381 +05:30 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskManagerAPIs_Review.Controllers.TaskController (TaskManagerAPIs_Review).
+2026-03-19 14:52:37.389 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-03-19 14:52:37.393 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TaskController.GetAll (TaskManagerAPIs_Review) in 6.3873ms
+2026-03-19 14:52:37.397 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TaskController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 14:52:37.400 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Task - 200 0 text/plain; charset=utf-8 108.6635ms
+2026-03-19 14:52:44.430 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Task - null null
+2026-03-19 14:52:44.443 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TaskController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 14:52:44.447 +05:30 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskManagerAPIs_Review.Controllers.TaskController (TaskManagerAPIs_Review).
+2026-03-19 14:52:44.452 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-03-19 14:52:44.456 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TaskController.GetAll (TaskManagerAPIs_Review) in 4.4665ms
+2026-03-19 14:52:44.460 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TaskController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 14:52:44.463 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Task - 200 0 text/plain; charset=utf-8 34.5948ms
+2026-03-19 15:25:14.783 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-19 15:25:15.251 +05:30 [INF] Now listening on: https://localhost:7143
+2026-03-19 15:25:15.254 +05:30 [INF] Now listening on: http://localhost:5161
+2026-03-19 15:25:15.333 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-19 15:25:15.337 +05:30 [INF] Hosting environment: Development
+2026-03-19 15:25:15.341 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\TaskManagerAPIs_Review\TaskManagerAPIs_Review
+2026-03-19 15:25:16.756 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - null null
+2026-03-19 15:25:17.433 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - 200 null text/html;charset=utf-8 688.1244ms
+2026-03-19 15:25:17.482 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-19 15:25:17.482 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_vs/browserLink - null null
+2026-03-19 15:25:17.534 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 54.9531ms
+2026-03-19 15:25:17.700 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_vs/browserLink - 200 null text/javascript; charset=UTF-8 220.722ms
+2026-03-19 15:25:17.850 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - null null
+2026-03-19 15:25:17.893 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 43.5134ms
+2026-03-19 15:25:24.177 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Tasks - null null
+2026-03-19 15:25:24.340 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-03-19 15:25:24.350 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-03-19 15:25:24.353 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Tasks - 401 0 null 176.5488ms
+2026-03-19 15:25:43.630 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Auth/login - application/json 61
+2026-03-19 15:25:43.649 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 15:25:43.683 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(TaskManagerAPIs_Review.DTOs.Auth.LoginDTO) on controller TaskManagerAPIs_Review.Controllers.AuthController (TaskManagerAPIs_Review).
+2026-03-19 15:25:45.942 +05:30 [INF] Executed DbCommand (51ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2026-03-19 15:25:46.110 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-19 15:25:46.123 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review) in 2428.4069ms
+2026-03-19 15:25:46.128 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 15:25:46.146 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Auth/login - 200 null application/json; charset=utf-8 2515.8499ms
+2026-03-19 15:25:59.237 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Tasks - null null
+2026-03-19 15:25:59.304 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 15:25:59.311 +05:30 [INF] Route matched with {action = "GetAll", controller = "Tasks"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 15:27:02.115 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-19 15:27:02.610 +05:30 [INF] Now listening on: https://localhost:7143
+2026-03-19 15:27:02.613 +05:30 [INF] Now listening on: http://localhost:5161
+2026-03-19 15:27:02.742 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-19 15:27:02.745 +05:30 [INF] Hosting environment: Development
+2026-03-19 15:27:02.748 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\TaskManagerAPIs_Review\TaskManagerAPIs_Review
+2026-03-19 15:27:03.483 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - null null
+2026-03-19 15:27:03.896 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - 200 null text/html;charset=utf-8 422.0663ms
+2026-03-19 15:27:03.955 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-19 15:27:03.957 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_vs/browserLink - null null
+2026-03-19 15:27:03.980 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 25.1652ms
+2026-03-19 15:27:04.075 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_vs/browserLink - 200 null text/javascript; charset=UTF-8 119.2556ms
+2026-03-19 15:27:04.150 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - null null
+2026-03-19 15:27:04.176 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.7906ms
+2026-03-19 15:27:17.917 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Auth/login - application/json 61
+2026-03-19 15:27:18.054 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 15:27:18.084 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(TaskManagerAPIs_Review.DTOs.Auth.LoginDTO) on controller TaskManagerAPIs_Review.Controllers.AuthController (TaskManagerAPIs_Review).
+2026-03-19 15:27:20.246 +05:30 [INF] Executed DbCommand (54ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2026-03-19 15:27:20.430 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-19 15:27:20.445 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review) in 2350.5528ms
+2026-03-19 15:27:20.449 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 15:27:20.473 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Auth/login - 200 null application/json; charset=utf-8 2556.0053ms
+2026-03-19 15:27:53.429 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Tasks - application/json 65
+2026-03-19 15:27:53.537 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.CreateTask (TaskManagerAPIs_Review)'
+2026-03-19 15:27:53.545 +05:30 [INF] Route matched with {action = "CreateTask", controller = "Tasks"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateTask(TaskManagerAPIs_Review.DTOs.Task.CreateTaskDTO) on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 15:28:40.673 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-19 15:28:41.128 +05:30 [INF] Now listening on: https://localhost:7143
+2026-03-19 15:28:41.131 +05:30 [INF] Now listening on: http://localhost:5161
+2026-03-19 15:28:41.197 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-19 15:28:41.200 +05:30 [INF] Hosting environment: Development
+2026-03-19 15:28:41.203 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\TaskManagerAPIs_Review\TaskManagerAPIs_Review
+2026-03-19 15:28:42.284 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - null null
+2026-03-19 15:28:42.652 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - 200 null text/html;charset=utf-8 378.7214ms
+2026-03-19 15:28:42.714 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-19 15:28:42.716 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_vs/browserLink - null null
+2026-03-19 15:28:42.743 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 26.9151ms
+2026-03-19 15:28:42.830 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_vs/browserLink - 200 null text/javascript; charset=UTF-8 114.761ms
+2026-03-19 15:28:42.896 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - null null
+2026-03-19 15:28:42.920 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 24.2568ms
+2026-03-19 15:28:56.489 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Auth/login - application/json 61
+2026-03-19 15:28:56.630 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 15:28:56.669 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(TaskManagerAPIs_Review.DTOs.Auth.LoginDTO) on controller TaskManagerAPIs_Review.Controllers.AuthController (TaskManagerAPIs_Review).
+2026-03-19 15:28:58.722 +05:30 [INF] Executed DbCommand (48ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2026-03-19 15:28:58.881 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-19 15:28:58.894 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review) in 2212.6942ms
+2026-03-19 15:28:58.897 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 15:28:58.912 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Auth/login - 200 null application/json; charset=utf-8 2423.6342ms
+2026-03-19 15:29:24.435 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Tasks - application/json 64
+2026-03-19 15:29:24.535 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.CreateTask (TaskManagerAPIs_Review)'
+2026-03-19 15:29:24.544 +05:30 [INF] Route matched with {action = "CreateTask", controller = "Tasks"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateTask(TaskManagerAPIs_Review.DTOs.Task.CreateTaskDTO) on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 15:29:24.801 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tasks] ([CreatedAt], [Description], [IsCompleted], [Title], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-03-19 15:29:24.832 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagerAPIs_Review.Models.Task'.
+2026-03-19 15:29:24.848 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.CreateTask (TaskManagerAPIs_Review) in 298.8431ms
+2026-03-19 15:29:24.852 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.CreateTask (TaskManagerAPIs_Review)'
+2026-03-19 15:29:24.855 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Tasks - 200 null application/json; charset=utf-8 421.2465ms
+2026-03-19 15:29:41.720 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Tasks - null null
+2026-03-19 15:29:41.733 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 15:29:41.738 +05:30 [INF] Route matched with {action = "GetAll", controller = "Tasks"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 15:29:41.835 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[Description], [t].[IsCompleted], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+WHERE [t].[UserId] = @__userId_0
+2026-03-19 15:29:41.842 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagerAPIs_Review.Models.Task, TaskManagerAPIs_Review, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-19 15:29:41.846 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review) in 103.2557ms
+2026-03-19 15:29:41.850 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 15:29:41.853 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Tasks - 200 null application/json; charset=utf-8 133.0431ms
+2026-03-19 16:02:52.690 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-19 16:02:53.240 +05:30 [INF] Now listening on: https://localhost:7143
+2026-03-19 16:02:53.243 +05:30 [INF] Now listening on: http://localhost:5161
+2026-03-19 16:02:53.512 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-19 16:02:53.515 +05:30 [INF] Hosting environment: Development
+2026-03-19 16:02:53.518 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\TaskManagerAPIs_Review\TaskManagerAPIs_Review
+2026-03-19 16:02:54.797 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - null null
+2026-03-19 16:02:55.243 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - 200 null text/html;charset=utf-8 456.405ms
+2026-03-19 16:02:55.293 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-19 16:02:55.293 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_vs/browserLink - null null
+2026-03-19 16:02:55.332 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 39.852ms
+2026-03-19 16:02:55.427 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_vs/browserLink - 200 null text/javascript; charset=UTF-8 135.2389ms
+2026-03-19 16:02:55.498 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - null null
+2026-03-19 16:02:55.536 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 38.6933ms
+2026-03-19 16:03:12.400 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Auth/login - application/json 61
+2026-03-19 16:03:12.548 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 16:03:12.582 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(TaskManagerAPIs_Review.DTOs.Auth.LoginDTO) on controller TaskManagerAPIs_Review.Controllers.AuthController (TaskManagerAPIs_Review).
+2026-03-19 16:03:14.869 +05:30 [INF] Executed DbCommand (72ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2026-03-19 16:03:15.037 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-19 16:03:15.052 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review) in 2459.4427ms
+2026-03-19 16:03:15.056 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 16:03:15.069 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Auth/login - 200 null application/json; charset=utf-8 2669.9074ms
+2026-03-19 16:03:30.247 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Tasks - null null
+2026-03-19 16:03:30.325 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 16:03:30.331 +05:30 [INF] Route matched with {action = "GetAll", controller = "Tasks"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 16:03:30.385 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[Description], [t].[IsCompleted], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+WHERE [t].[UserId] = @__userId_0
+2026-03-19 16:03:30.413 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagerAPIs_Review.Models.Task, TaskManagerAPIs_Review, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-19 16:03:30.431 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review) in 95.6798ms
+2026-03-19 16:03:30.435 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 16:03:30.439 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Tasks - 200 null application/json; charset=utf-8 192.9993ms
+2026-03-19 16:03:37.072 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Tasks/1 - null null
+2026-03-19 16:03:37.085 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetTaskById (TaskManagerAPIs_Review)'
+2026-03-19 16:03:37.092 +05:30 [INF] Route matched with {action = "GetTaskById", controller = "Tasks"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetTaskById(Int32) on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 16:03:37.190 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[@__taskId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CreatedAt], [t].[Description], [t].[IsCompleted], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__taskId_0 AND [t].[UserId] = @__userId_1
+2026-03-19 16:03:37.195 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagerAPIs_Review.Models.Task'.
+2026-03-19 16:03:37.198 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.GetTaskById (TaskManagerAPIs_Review) in 101.8716ms
+2026-03-19 16:03:37.202 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetTaskById (TaskManagerAPIs_Review)'
+2026-03-19 16:03:37.205 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Tasks/1 - 200 null application/json; charset=utf-8 133.6307ms
+2026-03-19 16:03:58.014 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7143/api/Tasks/1 - application/json 80
+2026-03-19 16:03:58.035 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.UpdateTask (TaskManagerAPIs_Review)'
+2026-03-19 16:03:58.040 +05:30 [INF] Route matched with {action = "UpdateTask", controller = "Tasks"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateTask(TaskManagerAPIs_Review.DTOs.Task.UpdateTaskDTO, Int32) on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 16:03:58.061 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__taskId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CreatedAt], [t].[Description], [t].[IsCompleted], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__taskId_0 AND [t].[UserId] = @__userId_1
+2026-03-19 16:03:58.077 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__task_Id_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CreatedAt], [t].[Description], [t].[IsCompleted], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__task_Id_0 AND [t].[UserId] = @__userId_1
+2026-03-19 16:03:58.197 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Boolean), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Tasks] SET [Description] = @p0, [IsCompleted] = @p1, [Title] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+2026-03-19 16:03:58.213 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagerAPIs_Review.Models.Task'.
+2026-03-19 16:03:58.216 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.UpdateTask (TaskManagerAPIs_Review) in 171.7007ms
+2026-03-19 16:03:58.220 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.UpdateTask (TaskManagerAPIs_Review)'
+2026-03-19 16:03:58.223 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7143/api/Tasks/1 - 200 null application/json; charset=utf-8 209.5703ms
+2026-03-19 16:04:11.751 +05:30 [INF] Request starting HTTP/2 PATCH https://localhost:7143/api/Tasks/1/complete - null null
+2026-03-19 16:04:11.772 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.MarkCompleted (TaskManagerAPIs_Review)'
+2026-03-19 16:04:11.776 +05:30 [INF] Route matched with {action = "MarkCompleted", controller = "Tasks"}. Executing controller action with signature Boolean MarkCompleted(Int32) on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 16:04:11.786 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__taskId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CreatedAt], [t].[Description], [t].[IsCompleted], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__taskId_0 AND [t].[UserId] = @__userId_1
+2026-03-19 16:04:11.793 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Boolean'.
+2026-03-19 16:04:11.801 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.MarkCompleted (TaskManagerAPIs_Review) in 22.5033ms
+2026-03-19 16:04:11.805 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.MarkCompleted (TaskManagerAPIs_Review)'
+2026-03-19 16:04:11.808 +05:30 [INF] Request finished HTTP/2 PATCH https://localhost:7143/api/Tasks/1/complete - 200 null application/json; charset=utf-8 57.4512ms
+2026-03-19 16:04:21.625 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7143/api/Tasks/1 - null null
+2026-03-19 16:04:21.634 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.DeleteTask (TaskManagerAPIs_Review)'
+2026-03-19 16:04:21.638 +05:30 [INF] Route matched with {action = "DeleteTask", controller = "Tasks"}. Executing controller action with signature Boolean DeleteTask(Int32) on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 16:04:21.647 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__taskId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CreatedAt], [t].[Description], [t].[IsCompleted], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__taskId_0 AND [t].[UserId] = @__userId_1
+2026-03-19 16:04:21.687 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Tasks]
+OUTPUT 1
+WHERE [Id] = @p0;
+2026-03-19 16:04:21.695 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Boolean'.
+2026-03-19 16:04:21.699 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.DeleteTask (TaskManagerAPIs_Review) in 56.6696ms
+2026-03-19 16:04:21.703 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.DeleteTask (TaskManagerAPIs_Review)'
+2026-03-19 16:04:21.706 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7143/api/Tasks/1 - 200 null application/json; charset=utf-8 80.6608ms
+2026-03-19 16:13:11.117 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-19 16:13:11.664 +05:30 [INF] Now listening on: https://localhost:7143
+2026-03-19 16:13:11.667 +05:30 [INF] Now listening on: http://localhost:5161
+2026-03-19 16:13:11.746 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-19 16:13:11.749 +05:30 [INF] Hosting environment: Development
+2026-03-19 16:13:11.752 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\TaskManagerAPIs_Review\TaskManagerAPIs_Review
+2026-03-19 16:17:24.827 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-19 16:17:25.334 +05:30 [INF] Now listening on: https://localhost:7143
+2026-03-19 16:17:25.337 +05:30 [INF] Now listening on: http://localhost:5161
+2026-03-19 16:17:25.527 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-19 16:17:25.529 +05:30 [INF] Hosting environment: Development
+2026-03-19 16:17:25.532 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\TaskManagerAPIs_Review\TaskManagerAPIs_Review
+2026-03-19 16:17:26.199 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - null null
+2026-03-19 16:17:26.621 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - 200 null text/html;charset=utf-8 432.38ms
+2026-03-19 16:17:26.684 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_vs/browserLink - null null
+2026-03-19 16:17:26.684 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-19 16:17:26.720 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 36.1246ms
+2026-03-19 16:17:26.790 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_vs/browserLink - 200 null text/javascript; charset=UTF-8 106.2289ms
+2026-03-19 16:17:26.859 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - null null
+2026-03-19 16:17:26.887 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.5486ms
+2026-03-19 16:17:38.496 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Tasks - null null
+2026-03-19 16:17:40.221 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-03-19 16:17:40.232 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-03-19 16:17:40.236 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Tasks - 401 0 null 1739.5774ms
+2026-03-19 16:17:55.286 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Auth/login - application/json 61
+2026-03-19 16:17:55.304 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 16:17:55.335 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(TaskManagerAPIs_Review.DTOs.Auth.LoginDTO) on controller TaskManagerAPIs_Review.Controllers.AuthController (TaskManagerAPIs_Review).
+2026-03-19 16:17:59.046 +05:30 [INF] Executed DbCommand (128ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2026-03-19 16:17:59.279 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-19 16:17:59.292 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review) in 3946.9957ms
+2026-03-19 16:17:59.298 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 16:17:59.311 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Auth/login - 200 null application/json; charset=utf-8 4025.0604ms
+2026-03-19 16:18:12.890 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Tasks - null null
+2026-03-19 16:18:12.962 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 16:18:12.967 +05:30 [INF] Route matched with {action = "GetAll", controller = "Tasks"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 16:18:13.023 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[Description], [t].[IsCompleted], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+WHERE [t].[UserId] = @__userId_0
+2026-03-19 16:18:13.030 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagerAPIs_Review.Models.Task, TaskManagerAPIs_Review, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-19 16:18:13.040 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review) in 68.4509ms
+2026-03-19 16:18:13.045 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 16:18:13.048 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Tasks - 200 null application/json; charset=utf-8 158.6834ms
+2026-03-19 16:18:15.460 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Tasks - null null
+2026-03-19 16:18:15.471 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 16:18:15.474 +05:30 [INF] Route matched with {action = "GetAll", controller = "Tasks"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 16:18:15.572 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[Description], [t].[IsCompleted], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+WHERE [t].[UserId] = @__userId_0
+2026-03-19 16:18:15.579 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagerAPIs_Review.Models.Task, TaskManagerAPIs_Review, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-19 16:18:15.583 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review) in 102.3828ms
+2026-03-19 16:18:15.586 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 16:18:15.588 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Tasks - 200 null application/json; charset=utf-8 129.1348ms
+2026-03-19 16:18:16.122 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Tasks - null null
+2026-03-19 16:18:16.134 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 16:18:16.137 +05:30 [INF] Route matched with {action = "GetAll", controller = "Tasks"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 16:18:16.150 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[Description], [t].[IsCompleted], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+WHERE [t].[UserId] = @__userId_0
+2026-03-19 16:18:16.155 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagerAPIs_Review.Models.Task, TaskManagerAPIs_Review, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-19 16:18:16.158 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review) in 17.1137ms
+2026-03-19 16:18:16.164 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 16:18:16.166 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Tasks - 200 null application/json; charset=utf-8 45.2496ms
+2026-03-19 16:18:36.018 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Tasks - application/json 58
+2026-03-19 16:18:36.031 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.CreateTask (TaskManagerAPIs_Review)'
+2026-03-19 16:18:36.036 +05:30 [INF] Route matched with {action = "CreateTask", controller = "Tasks"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateTask(TaskManagerAPIs_Review.DTOs.Task.CreateTaskDTO) on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 16:18:36.246 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tasks] ([CreatedAt], [Description], [IsCompleted], [Title], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-03-19 16:18:36.284 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagerAPIs_Review.Models.Task'.
+2026-03-19 16:18:36.291 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.CreateTask (TaskManagerAPIs_Review) in 251.3741ms
+2026-03-19 16:18:36.296 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.CreateTask (TaskManagerAPIs_Review)'
+2026-03-19 16:18:36.299 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Tasks - 200 null application/json; charset=utf-8 281.5011ms
+2026-03-19 16:18:40.849 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Tasks - null null
+2026-03-19 16:18:40.857 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 16:18:40.861 +05:30 [INF] Route matched with {action = "GetAll", controller = "Tasks"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 16:18:40.870 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[Description], [t].[IsCompleted], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+WHERE [t].[UserId] = @__userId_0
+2026-03-19 16:18:40.878 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagerAPIs_Review.Models.Task, TaskManagerAPIs_Review, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-19 16:18:40.882 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review) in 16.3744ms
+2026-03-19 16:18:40.885 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 16:18:40.887 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Tasks - 200 null application/json; charset=utf-8 39.1781ms
+2026-03-19 16:19:03.514 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Admin/1 - null null
+2026-03-19 16:19:03.526 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AdminController.GetAllTasks (TaskManagerAPIs_Review)'
+2026-03-19 16:19:03.533 +05:30 [INF] Route matched with {action = "GetAllTasks", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllTasks(Int32) on controller TaskManagerAPIs_Review.Controllers.AdminController (TaskManagerAPIs_Review).
+2026-03-19 16:19:03.571 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@__adminId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__adminId_0 AND [u].[Role] = N'admin'
+2026-03-19 16:19:03.583 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[Description], [t].[IsCompleted], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+2026-03-19 16:19:03.588 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagerAPIs_Review.Models.Task, TaskManagerAPIs_Review, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-19 16:19:03.591 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.AdminController.GetAllTasks (TaskManagerAPIs_Review) in 53.2177ms
+2026-03-19 16:19:03.597 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.AdminController.GetAllTasks (TaskManagerAPIs_Review)'
+2026-03-19 16:19:03.611 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Admin/1 - 200 null application/json; charset=utf-8 97.1622ms
+2026-03-19 16:20:49.725 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-19 16:20:50.238 +05:30 [INF] Now listening on: https://localhost:7143
+2026-03-19 16:20:50.241 +05:30 [INF] Now listening on: http://localhost:5161
+2026-03-19 16:20:50.376 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-19 16:20:50.379 +05:30 [INF] Hosting environment: Development
+2026-03-19 16:20:50.381 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\TaskManagerAPIs_Review\TaskManagerAPIs_Review
+2026-03-19 16:20:51.563 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - null null
+2026-03-19 16:20:52.011 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - 200 null text/html;charset=utf-8 457.7143ms
+2026-03-19 16:20:52.095 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_vs/browserLink - null null
+2026-03-19 16:20:52.095 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-19 16:20:52.156 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 64.1333ms
+2026-03-19 16:20:52.232 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_vs/browserLink - 200 null text/javascript; charset=UTF-8 137.1359ms
+2026-03-19 16:20:52.300 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - null null
+2026-03-19 16:20:52.334 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 34.2295ms
+2026-03-19 16:21:11.509 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Auth/login - application/json 61
+2026-03-19 16:21:11.677 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 16:21:11.711 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(TaskManagerAPIs_Review.DTOs.Auth.LoginDTO) on controller TaskManagerAPIs_Review.Controllers.AuthController (TaskManagerAPIs_Review).
+2026-03-19 16:21:13.954 +05:30 [INF] Executed DbCommand (55ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2026-03-19 16:21:14.103 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-19 16:21:14.121 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review) in 2398.6223ms
+2026-03-19 16:21:14.124 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 16:21:14.140 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Auth/login - 200 null application/json; charset=utf-8 2630.6073ms
+2026-03-19 16:21:38.584 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Tasks - null null
+2026-03-19 16:21:38.660 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 16:21:38.666 +05:30 [INF] Route matched with {action = "GetAll", controller = "Tasks"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 16:21:38.732 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[Description], [t].[IsCompleted], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+WHERE [t].[UserId] = @__userId_0
+2026-03-19 16:21:38.753 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagerAPIs_Review.Models.Task, TaskManagerAPIs_Review, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-19 16:21:38.767 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review) in 97.2789ms
+2026-03-19 16:21:38.771 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 16:21:38.774 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Tasks - 200 null application/json; charset=utf-8 191.3275ms
+2026-03-19 16:21:45.351 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Admin/1 - null null
+2026-03-19 16:21:45.363 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AdminController.GetAllTasks (TaskManagerAPIs_Review)'
+2026-03-19 16:21:45.369 +05:30 [INF] Route matched with {action = "GetAllTasks", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllTasks(Int32) on controller TaskManagerAPIs_Review.Controllers.AdminController (TaskManagerAPIs_Review).
+2026-03-19 16:21:45.458 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__adminId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__adminId_0 AND [u].[Role] = N'admin'
+2026-03-19 16:21:45.464 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2026-03-19 16:21:45.468 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.AdminController.GetAllTasks (TaskManagerAPIs_Review) in 93.821ms
+2026-03-19 16:21:45.478 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.AdminController.GetAllTasks (TaskManagerAPIs_Review)'
+2026-03-19 16:21:45.485 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Admin/1 - 400 null text/plain; charset=utf-8 134.5194ms
+2026-03-19 16:21:51.232 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Admin/2 - null null
+2026-03-19 16:21:51.241 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AdminController.GetAllTasks (TaskManagerAPIs_Review)'
+2026-03-19 16:21:51.245 +05:30 [INF] Route matched with {action = "GetAllTasks", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllTasks(Int32) on controller TaskManagerAPIs_Review.Controllers.AdminController (TaskManagerAPIs_Review).
+2026-03-19 16:21:51.258 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__adminId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__adminId_0 AND [u].[Role] = N'admin'
+2026-03-19 16:21:51.264 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2026-03-19 16:21:51.268 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.AdminController.GetAllTasks (TaskManagerAPIs_Review) in 17.8082ms
+2026-03-19 16:21:51.273 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.AdminController.GetAllTasks (TaskManagerAPIs_Review)'
+2026-03-19 16:21:51.275 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Admin/2 - 400 null text/plain; charset=utf-8 43.9815ms
+2026-03-19 16:22:10.303 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Auth/register - application/json 81
+2026-03-19 16:22:10.311 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Register (TaskManagerAPIs_Review)'
+2026-03-19 16:22:10.316 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(TaskManagerAPIs_Review.DTOs.Auth.RegisterDTO) on controller TaskManagerAPIs_Review.Controllers.AuthController (TaskManagerAPIs_Review).
+2026-03-19 16:22:10.331 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2026-03-19 16:22:10.483 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([PasswordHash], [Role], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2026-03-19 16:22:10.510 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagerAPIs_Review.Models.User'.
+2026-03-19 16:22:10.515 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.AuthController.Register (TaskManagerAPIs_Review) in 192.7004ms
+2026-03-19 16:22:10.520 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Register (TaskManagerAPIs_Review)'
+2026-03-19 16:22:10.523 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Auth/register - 200 null application/json; charset=utf-8 219.2604ms
+2026-03-19 16:22:38.459 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Auth/login - application/json 56
+2026-03-19 16:22:38.477 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 16:22:38.480 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(TaskManagerAPIs_Review.DTOs.Auth.LoginDTO) on controller TaskManagerAPIs_Review.Controllers.AuthController (TaskManagerAPIs_Review).
+2026-03-19 16:22:38.495 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2026-03-19 16:22:38.503 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-19 16:22:38.506 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review) in 20.24ms
+2026-03-19 16:22:38.510 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 16:22:38.512 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Auth/login - 200 null application/json; charset=utf-8 54.4002ms
+2026-03-19 16:23:03.583 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Tasks - application/json 58
+2026-03-19 16:23:03.603 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.CreateTask (TaskManagerAPIs_Review)'
+2026-03-19 16:23:03.607 +05:30 [INF] Route matched with {action = "CreateTask", controller = "Tasks"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateTask(TaskManagerAPIs_Review.DTOs.Task.CreateTaskDTO) on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 16:23:03.647 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tasks] ([CreatedAt], [Description], [IsCompleted], [Title], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-03-19 16:23:03.656 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagerAPIs_Review.Models.Task'.
+2026-03-19 16:23:03.660 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.CreateTask (TaskManagerAPIs_Review) in 49.5352ms
+2026-03-19 16:23:03.677 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.CreateTask (TaskManagerAPIs_Review)'
+2026-03-19 16:23:03.682 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Tasks - 200 null application/json; charset=utf-8 99.5097ms
+2026-03-19 16:24:36.983 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Auth/login - application/json 58
+2026-03-19 16:24:37.009 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 16:24:37.011 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(TaskManagerAPIs_Review.DTOs.Auth.LoginDTO) on controller TaskManagerAPIs_Review.Controllers.AuthController (TaskManagerAPIs_Review).
+2026-03-19 16:24:37.021 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2026-03-19 16:24:37.027 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-19 16:24:37.030 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review) in 15.1547ms
+2026-03-19 16:24:37.044 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 16:24:37.046 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Auth/login - 200 null application/json; charset=utf-8 64.1451ms
+2026-03-19 16:24:59.159 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Admin/3 - null null
+2026-03-19 16:24:59.179 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AdminController.GetAllTasks (TaskManagerAPIs_Review)'
+2026-03-19 16:24:59.182 +05:30 [INF] Route matched with {action = "GetAllTasks", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllTasks(Int32) on controller TaskManagerAPIs_Review.Controllers.AdminController (TaskManagerAPIs_Review).
+2026-03-19 16:24:59.194 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__adminId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__adminId_0 AND [u].[Role] = N'admin'
+2026-03-19 16:24:59.207 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[Description], [t].[IsCompleted], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+2026-03-19 16:24:59.213 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagerAPIs_Review.Models.Task, TaskManagerAPIs_Review, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-19 16:24:59.217 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.AdminController.GetAllTasks (TaskManagerAPIs_Review) in 29.3937ms
+2026-03-19 16:24:59.222 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.AdminController.GetAllTasks (TaskManagerAPIs_Review)'
+2026-03-19 16:24:59.225 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Admin/3 - 200 null application/json; charset=utf-8 66.5748ms
+2026-03-19 16:26:13.643 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-19 16:26:14.117 +05:30 [INF] Now listening on: https://localhost:7143
+2026-03-19 16:26:14.120 +05:30 [INF] Now listening on: http://localhost:5161
+2026-03-19 16:26:14.219 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-19 16:26:14.222 +05:30 [INF] Hosting environment: Development
+2026-03-19 16:26:14.225 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\TaskManagerAPIs_Review\TaskManagerAPIs_Review
+2026-03-19 16:26:14.762 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - null null
+2026-03-19 16:26:15.192 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - 200 null text/html;charset=utf-8 440.8906ms
+2026-03-19 16:26:15.254 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-19 16:26:15.263 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_vs/browserLink - null null
+2026-03-19 16:26:15.285 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 32.593ms
+2026-03-19 16:26:15.367 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_vs/browserLink - 200 null text/javascript; charset=UTF-8 104.7457ms
+2026-03-19 16:26:15.435 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - null null
+2026-03-19 16:26:15.476 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 41.037ms
+2026-03-19 16:26:33.616 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Auth/login - application/json 58
+2026-03-19 16:26:33.759 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 16:26:33.792 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(TaskManagerAPIs_Review.DTOs.Auth.LoginDTO) on controller TaskManagerAPIs_Review.Controllers.AuthController (TaskManagerAPIs_Review).
+2026-03-19 16:26:36.146 +05:30 [INF] Executed DbCommand (61ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2026-03-19 16:26:36.299 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-19 16:26:36.313 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review) in 2510.1279ms
+2026-03-19 16:26:36.317 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 16:26:36.333 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Auth/login - 200 null application/json; charset=utf-8 2716.7778ms
+2026-03-19 16:26:53.875 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Admin - null null
+2026-03-19 16:26:53.963 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AdminController.GetAllTasks (TaskManagerAPIs_Review)'
+2026-03-19 16:26:53.969 +05:30 [INF] Route matched with {action = "GetAllTasks", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllTasks() on controller TaskManagerAPIs_Review.Controllers.AdminController (TaskManagerAPIs_Review).
+2026-03-19 16:26:54.032 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__adminId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__adminId_0 AND [u].[Role] = N'admin'
+2026-03-19 16:26:54.050 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[Description], [t].[IsCompleted], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+2026-03-19 16:26:54.079 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagerAPIs_Review.Models.Task, TaskManagerAPIs_Review, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-19 16:26:54.096 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.AdminController.GetAllTasks (TaskManagerAPIs_Review) in 121.4072ms
+2026-03-19 16:26:54.101 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.AdminController.GetAllTasks (TaskManagerAPIs_Review)'
+2026-03-19 16:26:54.113 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Admin - 200 null application/json; charset=utf-8 247.5136ms
+2026-03-19 17:00:32.280 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-19 17:00:32.871 +05:30 [INF] Now listening on: https://localhost:7143
+2026-03-19 17:00:32.874 +05:30 [INF] Now listening on: http://localhost:5161
+2026-03-19 17:00:33.127 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-19 17:00:33.130 +05:30 [INF] Hosting environment: Development
+2026-03-19 17:00:33.132 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\TaskManagerAPIs_Review\TaskManagerAPIs_Review
+2026-03-19 17:00:34.081 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - null null
+2026-03-19 17:00:34.560 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - 200 null text/html;charset=utf-8 489.9261ms
+2026-03-19 17:00:34.668 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-19 17:00:34.672 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_vs/browserLink - null null
+2026-03-19 17:00:34.697 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 29.9368ms
+2026-03-19 17:00:35.895 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1226.7128ms
+2026-03-19 17:00:35.962 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - null null
+2026-03-19 17:00:35.998 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 36.111ms
+2026-03-19 17:00:49.451 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Admin - null null
+2026-03-19 17:00:49.601 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AdminController.GetAllTasks (TaskManagerAPIs_Review)'
+2026-03-19 17:00:49.633 +05:30 [INF] Route matched with {action = "GetAllTasks", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllTasks() on controller TaskManagerAPIs_Review.Controllers.AdminController (TaskManagerAPIs_Review).
+2026-03-19 17:02:24.756 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-19 17:02:25.231 +05:30 [INF] Now listening on: https://localhost:7143
+2026-03-19 17:02:25.235 +05:30 [INF] Now listening on: http://localhost:5161
+2026-03-19 17:02:25.473 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-19 17:02:25.475 +05:30 [INF] Hosting environment: Development
+2026-03-19 17:02:25.478 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\TaskManagerAPIs_Review\TaskManagerAPIs_Review
+2026-03-19 17:02:26.347 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - null null
+2026-03-19 17:02:26.769 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - 200 null text/html;charset=utf-8 434.5696ms
+2026-03-19 17:02:26.841 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-19 17:02:26.841 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_vs/browserLink - null null
+2026-03-19 17:02:26.873 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 32.6476ms
+2026-03-19 17:02:26.976 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_vs/browserLink - 200 null text/javascript; charset=UTF-8 136.0351ms
+2026-03-19 17:02:27.055 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - null null
+2026-03-19 17:02:27.090 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 35.6069ms
+2026-03-19 17:02:33.959 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Admin/tasks - null null
+2026-03-19 17:02:34.117 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (admin)
+2026-03-19 17:02:34.127 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-03-19 17:02:34.131 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Admin/tasks - 401 0 null 172.8042ms
+2026-03-19 17:02:46.025 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Auth/login - application/json 61
+2026-03-19 17:02:46.040 +05:30 [INF] CORS policy execution failed.
+2026-03-19 17:02:46.044 +05:30 [INF] Request origin https://localhost:7143 does not have permission to access the resource.
+2026-03-19 17:02:46.054 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 17:02:46.086 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(TaskManagerAPIs_Review.DTOs.Auth.LoginDTO) on controller TaskManagerAPIs_Review.Controllers.AuthController (TaskManagerAPIs_Review).
+2026-03-19 17:02:48.351 +05:30 [INF] Executed DbCommand (58ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2026-03-19 17:02:48.499 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-19 17:02:48.514 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review) in 2415.7305ms
+2026-03-19 17:02:48.518 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 17:02:48.538 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Auth/login - 200 null application/json; charset=utf-8 2512.5295ms
+2026-03-19 17:03:03.203 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Admin/tasks - null null
+2026-03-19 17:03:03.283 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (admin)
+2026-03-19 17:03:03.290 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-03-19 17:03:03.294 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Admin/tasks - 403 0 null 92.3024ms
+2026-03-19 17:03:05.603 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Admin/tasks - null null
+2026-03-19 17:03:05.613 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (admin)
+2026-03-19 17:03:05.616 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-03-19 17:03:05.619 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Admin/tasks - 403 0 null 16.5992ms
+2026-03-19 17:03:33.049 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Auth/login - application/json 58
+2026-03-19 17:03:33.081 +05:30 [INF] CORS policy execution failed.
+2026-03-19 17:03:33.083 +05:30 [INF] Request origin https://localhost:7143 does not have permission to access the resource.
+2026-03-19 17:03:33.086 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 17:03:33.089 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(TaskManagerAPIs_Review.DTOs.Auth.LoginDTO) on controller TaskManagerAPIs_Review.Controllers.AuthController (TaskManagerAPIs_Review).
+2026-03-19 17:03:33.128 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2026-03-19 17:03:33.136 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-19 17:03:33.141 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review) in 46.8618ms
+2026-03-19 17:03:33.145 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 17:03:33.148 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Auth/login - 200 null application/json; charset=utf-8 98.7676ms
+2026-03-19 17:03:36.973 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Auth/login - application/json 58
+2026-03-19 17:03:36.983 +05:30 [INF] CORS policy execution failed.
+2026-03-19 17:03:36.986 +05:30 [INF] Request origin https://localhost:7143 does not have permission to access the resource.
+2026-03-19 17:03:36.990 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 17:03:36.993 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(TaskManagerAPIs_Review.DTOs.Auth.LoginDTO) on controller TaskManagerAPIs_Review.Controllers.AuthController (TaskManagerAPIs_Review).
+2026-03-19 17:03:37.107 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2026-03-19 17:03:37.113 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-19 17:03:37.117 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review) in 117.3782ms
+2026-03-19 17:03:37.120 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 17:03:37.124 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Auth/login - 200 null application/json; charset=utf-8 151.4118ms
+2026-03-19 17:03:56.622 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Admin/tasks - null null
+2026-03-19 17:03:56.631 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AdminController.GetAllTasks (TaskManagerAPIs_Review)'
+2026-03-19 17:03:56.639 +05:30 [INF] Route matched with {action = "GetAllTasks", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllTasks() on controller TaskManagerAPIs_Review.Controllers.AdminController (TaskManagerAPIs_Review).
+2026-03-19 17:03:56.658 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[Description], [t].[IsCompleted], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+2026-03-19 17:03:56.681 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagerAPIs_Review.Models.Task, TaskManagerAPIs_Review, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-19 17:03:56.697 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.AdminController.GetAllTasks (TaskManagerAPIs_Review) in 54.0895ms
+2026-03-19 17:03:56.703 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.AdminController.GetAllTasks (TaskManagerAPIs_Review)'
+2026-03-19 17:03:56.706 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Admin/tasks - 200 null application/json; charset=utf-8 84.8939ms
+2026-03-19 17:13:56.037 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-19 17:13:56.517 +05:30 [INF] Now listening on: https://localhost:7143
+2026-03-19 17:13:56.520 +05:30 [INF] Now listening on: http://localhost:5161
+2026-03-19 17:13:56.802 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-19 17:13:56.804 +05:30 [INF] Hosting environment: Development
+2026-03-19 17:13:56.807 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\TaskManagerAPIs_Review\TaskManagerAPIs_Review
+2026-03-19 17:13:57.299 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - null null
+2026-03-19 17:13:57.733 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - 200 null text/html;charset=utf-8 444.698ms
+2026-03-19 17:13:57.788 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-19 17:13:57.788 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_vs/browserLink - null null
+2026-03-19 17:13:57.824 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 37.0725ms
+2026-03-19 17:13:57.911 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_vs/browserLink - 200 null text/javascript; charset=UTF-8 124.8955ms
+2026-03-19 17:13:57.977 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - null null
+2026-03-19 17:13:58.007 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 29.7161ms
+2026-03-19 17:14:20.640 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Auth/login - application/json 61
+2026-03-19 17:14:20.663 +05:30 [INF] CORS policy execution failed.
+2026-03-19 17:14:20.665 +05:30 [INF] Request origin https://localhost:7143 does not have permission to access the resource.
+2026-03-19 17:14:20.801 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 17:14:20.845 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(TaskManagerAPIs_Review.DTOs.Auth.LoginDTO) on controller TaskManagerAPIs_Review.Controllers.AuthController (TaskManagerAPIs_Review).
+2026-03-19 17:14:22.933 +05:30 [INF] Executed DbCommand (54ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2026-03-19 17:14:23.099 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-19 17:14:23.116 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review) in 2259.6411ms
+2026-03-19 17:14:23.120 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 17:14:23.137 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Auth/login - 200 null application/json; charset=utf-8 2497.3862ms
+2026-03-19 17:14:44.350 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Tasks - null null
+2026-03-19 17:14:44.425 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 17:14:44.431 +05:30 [INF] Route matched with {action = "GetAll", controller = "Tasks"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 17:14:44.831 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[System.Collections.Generic.List`1[[TaskManagerAPIs_Review.Models.Task, TaskManagerAPIs_Review, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[TaskManagerAPIs_Review.Services.Implementation.TaskService+<GetAllTasks>d__5, TaskManagerAPIs_Review, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-19 17:14:44.847 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review) in 409.2355ms
+2026-03-19 17:14:44.855 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 17:14:44.861 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The type 'System.Threading.ExecutionContext&' of property 'Context' on type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[TaskManagerAPIs_Review.Models.Task],TaskManagerAPIs_Review.Services.Implementation.TaskService+<GetAllTasks>d__5]' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_CannotSerializeInvalidType(Type typeToConvert, Type declaringType, MemberInfo memberInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreatePropertyInfo(JsonTypeInfo typeInfo, Type typeToConvert, MemberInfo memberInfo, JsonSerializerOptions options, Boolean shouldCheckForRequiredKeyword, Boolean hasJsonIncludeAttribute)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.AddMembersDeclaredBySuperType(JsonTypeInfo typeInfo, Type currentType, Boolean constructorHasSetsRequiredMembersAttribute, PropertyHierarchyResolutionState& state)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.PopulateProperties(JsonTypeInfo typeInfo)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.CreateTypeInfoCore(Type type, JsonConverter converter, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.DefaultJsonTypeInfoResolver.GetTypeInfo(Type type, JsonSerializerOptions options)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoNoCaching(Type type)
+   at System.Text.Json.JsonSerializerOptions.CachingContext.CreateCacheEntry(Type type, CachingContext context)
+--- End of stack trace from previous location ---
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfoInternal(Type type, Boolean ensureConfigured, Nullable`1 ensureNotNull, Boolean resolveIfMutable, Boolean fallBackToNearestAncestorType)
+   at System.Text.Json.JsonSerializerOptions.GetTypeInfo(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-03-19 17:14:44.975 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Tasks - 500 null text/plain; charset=utf-8 625.8543ms
+2026-03-19 17:16:42.236 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-19 17:16:42.778 +05:30 [INF] Now listening on: https://localhost:7143
+2026-03-19 17:16:42.792 +05:30 [INF] Now listening on: http://localhost:5161
+2026-03-19 17:16:42.920 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-19 17:16:42.924 +05:30 [INF] Hosting environment: Development
+2026-03-19 17:16:42.927 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\TaskManagerAPIs_Review\TaskManagerAPIs_Review
+2026-03-19 17:16:43.719 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - null null
+2026-03-19 17:16:44.144 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - 200 null text/html;charset=utf-8 436.2833ms
+2026-03-19 17:16:44.210 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_vs/browserLink - null null
+2026-03-19 17:16:44.213 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-19 17:16:44.243 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 30.1474ms
+2026-03-19 17:16:44.317 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_vs/browserLink - 200 null text/javascript; charset=UTF-8 107.1286ms
+2026-03-19 17:16:44.389 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - null null
+2026-03-19 17:16:44.423 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 34.5914ms
+2026-03-19 17:16:56.531 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Auth/login - application/json 61
+2026-03-19 17:16:56.554 +05:30 [INF] CORS policy execution failed.
+2026-03-19 17:16:56.557 +05:30 [INF] Request origin https://localhost:7143 does not have permission to access the resource.
+2026-03-19 17:16:56.678 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 17:16:56.714 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(TaskManagerAPIs_Review.DTOs.Auth.LoginDTO) on controller TaskManagerAPIs_Review.Controllers.AuthController (TaskManagerAPIs_Review).
+2026-03-19 17:16:58.758 +05:30 [INF] Executed DbCommand (66ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2026-03-19 17:16:58.925 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-19 17:16:58.940 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review) in 2213.9375ms
+2026-03-19 17:16:58.943 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 17:16:58.955 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Auth/login - 200 null application/json; charset=utf-8 2424.268ms
+2026-03-19 17:17:16.608 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Tasks - null null
+2026-03-19 17:17:16.690 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 17:17:16.699 +05:30 [INF] Route matched with {action = "GetAll", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 17:17:17.101 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[Description], [t].[IsCompleted], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+WHERE [t].[UserId] = @__userId_0
+2026-03-19 17:17:17.158 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagerAPIs_Review.Models.Task, TaskManagerAPIs_Review, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-19 17:17:17.164 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review) in 458.9807ms
+2026-03-19 17:17:17.169 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 17:17:17.173 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Tasks - 200 null application/json; charset=utf-8 564.7696ms
+2026-03-19 17:17:35.368 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Tasks - application/json 58
+2026-03-19 17:17:35.378 +05:30 [INF] CORS policy execution failed.
+2026-03-19 17:17:35.381 +05:30 [INF] Request origin https://localhost:7143 does not have permission to access the resource.
+2026-03-19 17:17:35.392 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.CreateTask (TaskManagerAPIs_Review)'
+2026-03-19 17:17:35.397 +05:30 [INF] Route matched with {action = "CreateTask", controller = "Tasks"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateTask(TaskManagerAPIs_Review.DTOs.Task.CreateTaskDTO) on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 17:17:35.655 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tasks] ([CreatedAt], [Description], [IsCompleted], [Title], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-03-19 17:17:35.697 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagerAPIs_Review.Models.Task'.
+2026-03-19 17:17:35.701 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.CreateTask (TaskManagerAPIs_Review) in 299.1524ms
+2026-03-19 17:17:35.707 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.CreateTask (TaskManagerAPIs_Review)'
+2026-03-19 17:17:35.710 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Tasks - 200 null application/json; charset=utf-8 341.5323ms
+2026-03-19 17:17:40.401 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Tasks - null null
+2026-03-19 17:17:40.410 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 17:17:40.413 +05:30 [INF] Route matched with {action = "GetAll", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 17:17:40.444 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagerAPIs_Review.Models.Task, TaskManagerAPIs_Review, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-19 17:17:40.446 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review) in 27.6522ms
+2026-03-19 17:17:40.450 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 17:17:40.453 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Tasks - 200 null application/json; charset=utf-8 53.1002ms
+2026-03-19 17:17:42.113 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Tasks - null null
+2026-03-19 17:17:42.120 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 17:17:42.124 +05:30 [INF] Route matched with {action = "GetAll", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 17:17:42.134 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagerAPIs_Review.Models.Task, TaskManagerAPIs_Review, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-19 17:17:42.137 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review) in 8.8531ms
+2026-03-19 17:17:42.142 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 17:17:42.154 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Tasks - 200 null application/json; charset=utf-8 41.0386ms
+2026-03-19 17:22:27.106 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-19 17:22:27.673 +05:30 [INF] Now listening on: https://localhost:7143
+2026-03-19 17:22:27.676 +05:30 [INF] Now listening on: http://localhost:5161
+2026-03-19 17:22:27.924 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-19 17:22:27.927 +05:30 [INF] Hosting environment: Development
+2026-03-19 17:22:27.929 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\TaskManagerAPIs_Review\TaskManagerAPIs_Review
+2026-03-19 17:22:28.888 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - null null
+2026-03-19 17:22:29.308 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - 200 null text/html;charset=utf-8 435.459ms
+2026-03-19 17:22:29.367 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-19 17:22:29.372 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_vs/browserLink - null null
+2026-03-19 17:22:29.398 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 30.5819ms
+2026-03-19 17:22:29.488 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_vs/browserLink - 200 null text/javascript; charset=UTF-8 116.7236ms
+2026-03-19 17:22:29.563 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - null null
+2026-03-19 17:22:29.600 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 37.2418ms
+2026-03-19 17:22:50.059 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Auth/login - application/json 61
+2026-03-19 17:22:50.094 +05:30 [INF] CORS policy execution failed.
+2026-03-19 17:22:50.096 +05:30 [INF] Request origin https://localhost:7143 does not have permission to access the resource.
+2026-03-19 17:22:50.225 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 17:22:50.264 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(TaskManagerAPIs_Review.DTOs.Auth.LoginDTO) on controller TaskManagerAPIs_Review.Controllers.AuthController (TaskManagerAPIs_Review).
+2026-03-19 17:22:52.417 +05:30 [INF] Executed DbCommand (56ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2026-03-19 17:22:52.583 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-19 17:22:52.596 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review) in 2321.1289ms
+2026-03-19 17:22:52.601 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 17:22:52.617 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Auth/login - 200 null application/json; charset=utf-8 2558.0425ms
+2026-03-19 17:23:19.398 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Tasks - null null
+2026-03-19 17:23:19.474 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 17:23:19.485 +05:30 [INF] Route matched with {action = "GetAll", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 17:23:19.889 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagerAPIs_Review.Models.Task, TaskManagerAPIs_Review, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-19 17:23:19.900 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review) in 411.3981ms
+2026-03-19 17:23:19.905 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 17:23:19.908 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Tasks - 200 null application/json; charset=utf-8 512.1435ms
+2026-03-19 17:23:32.654 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Tasks/4 - null null
+2026-03-19 17:23:32.668 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetTaskById (TaskManagerAPIs_Review)'
+2026-03-19 17:23:32.673 +05:30 [INF] Route matched with {action = "GetTaskById", controller = "Tasks"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetTaskById(Int32) on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 17:23:32.720 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__taskId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CreatedAt], [t].[Description], [t].[IsCompleted], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__taskId_0 AND [t].[UserId] = @__userId_1
+2026-03-19 17:23:32.745 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagerAPIs_Review.Models.Task'.
+2026-03-19 17:23:32.749 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.GetTaskById (TaskManagerAPIs_Review) in 71.0687ms
+2026-03-19 17:23:32.753 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetTaskById (TaskManagerAPIs_Review)'
+2026-03-19 17:23:32.755 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Tasks/4 - 200 null application/json; charset=utf-8 101.8596ms
+2026-03-19 17:23:56.209 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7143/api/Tasks/2 - application/json 86
+2026-03-19 17:23:56.219 +05:30 [INF] CORS policy execution failed.
+2026-03-19 17:23:56.221 +05:30 [INF] Request origin https://localhost:7143 does not have permission to access the resource.
+2026-03-19 17:23:56.228 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.UpdateTask (TaskManagerAPIs_Review)'
+2026-03-19 17:23:56.235 +05:30 [INF] Route matched with {action = "UpdateTask", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTask(TaskManagerAPIs_Review.DTOs.Task.UpdateTaskDTO, Int32) on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 17:23:56.337 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__taskId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CreatedAt], [t].[Description], [t].[IsCompleted], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__taskId_0 AND [t].[UserId] = @__userId_1
+2026-03-19 17:23:56.353 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__task_Id_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CreatedAt], [t].[Description], [t].[IsCompleted], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__task_Id_0 AND [t].[UserId] = @__userId_1
+2026-03-19 17:23:56.466 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Tasks] SET [IsCompleted] = @p0, [Title] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2026-03-19 17:23:56.491 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagerAPIs_Review.Models.Task'.
+2026-03-19 17:23:56.496 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.UpdateTask (TaskManagerAPIs_Review) in 257.182ms
+2026-03-19 17:23:56.501 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.UpdateTask (TaskManagerAPIs_Review)'
+2026-03-19 17:23:56.513 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7143/api/Tasks/2 - 200 null application/json; charset=utf-8 304.2932ms
+2026-03-19 17:24:04.097 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Tasks - null null
+2026-03-19 17:24:04.111 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 17:24:04.114 +05:30 [INF] Route matched with {action = "GetAll", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 17:24:04.123 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagerAPIs_Review.Models.Task, TaskManagerAPIs_Review, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-19 17:24:04.129 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review) in 9.7764ms
+2026-03-19 17:24:04.132 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 17:24:04.135 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Tasks - 200 null application/json; charset=utf-8 38.6029ms
+2026-03-19 17:24:12.590 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Tasks - null null
+2026-03-19 17:24:12.597 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 17:24:12.600 +05:30 [INF] Route matched with {action = "GetAll", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 17:24:12.611 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagerAPIs_Review.Models.Task, TaskManagerAPIs_Review, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-19 17:24:12.615 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review) in 10.6935ms
+2026-03-19 17:24:12.619 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 17:24:12.623 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Tasks - 200 null application/json; charset=utf-8 33.5823ms
+2026-03-19 17:24:13.764 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Tasks - null null
+2026-03-19 17:24:13.772 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 17:24:13.775 +05:30 [INF] Route matched with {action = "GetAll", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 17:24:13.783 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagerAPIs_Review.Models.Task, TaskManagerAPIs_Review, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-19 17:24:13.788 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review) in 7.9895ms
+2026-03-19 17:24:13.792 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 17:24:13.795 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Tasks - 200 null application/json; charset=utf-8 31.1246ms
+2026-03-19 17:25:09.308 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-19 17:25:09.890 +05:30 [INF] Now listening on: https://localhost:7143
+2026-03-19 17:25:09.893 +05:30 [INF] Now listening on: http://localhost:5161
+2026-03-19 17:25:10.159 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-19 17:25:10.161 +05:30 [INF] Hosting environment: Development
+2026-03-19 17:25:10.163 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\TaskManagerAPIs_Review\TaskManagerAPIs_Review
+2026-03-19 17:25:10.988 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - null null
+2026-03-19 17:25:11.377 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - 200 null text/html;charset=utf-8 401.9368ms
+2026-03-19 17:25:11.450 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-19 17:25:11.450 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/_vs/browserLink - null null
+2026-03-19 17:25:11.479 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - 200 16529 application/javascript; charset=utf-8 28.9253ms
+2026-03-19 17:25:11.561 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/_vs/browserLink - 200 null text/javascript; charset=UTF-8 112.0575ms
+2026-03-19 17:25:11.636 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - null null
+2026-03-19 17:25:11.684 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 49.5284ms
+2026-03-19 17:25:25.324 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7143/api/Auth/login - application/json 61
+2026-03-19 17:25:25.343 +05:30 [INF] CORS policy execution failed.
+2026-03-19 17:25:25.345 +05:30 [INF] Request origin https://localhost:7143 does not have permission to access the resource.
+2026-03-19 17:25:25.463 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 17:25:25.498 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(TaskManagerAPIs_Review.DTOs.Auth.LoginDTO) on controller TaskManagerAPIs_Review.Controllers.AuthController (TaskManagerAPIs_Review).
+2026-03-19 17:25:27.620 +05:30 [INF] Executed DbCommand (51ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2026-03-19 17:25:27.788 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-19 17:25:27.804 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review) in 2292.8138ms
+2026-03-19 17:25:27.807 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.AuthController.Login (TaskManagerAPIs_Review)'
+2026-03-19 17:25:27.822 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7143/api/Auth/login - 200 null application/json; charset=utf-8 2498.791ms
+2026-03-19 17:25:44.805 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Tasks - null null
+2026-03-19 17:25:44.901 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 17:25:44.914 +05:30 [INF] Route matched with {action = "GetAll", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 17:25:45.351 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagerAPIs_Review.Models.Task, TaskManagerAPIs_Review, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-19 17:25:45.364 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review) in 445.1839ms
+2026-03-19 17:25:45.372 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 17:25:45.377 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Tasks - 200 null application/json; charset=utf-8 572.8833ms
+2026-03-19 17:26:25.963 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7143/api/Tasks/2 - application/json 92
+2026-03-19 17:26:25.981 +05:30 [INF] CORS policy execution failed.
+2026-03-19 17:26:25.983 +05:30 [INF] Request origin https://localhost:7143 does not have permission to access the resource.
+2026-03-19 17:26:25.992 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.UpdateTask (TaskManagerAPIs_Review)'
+2026-03-19 17:26:26.002 +05:30 [INF] Route matched with {action = "UpdateTask", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTask(TaskManagerAPIs_Review.DTOs.Task.UpdateTaskDTO, Int32) on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 17:26:26.072 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__taskId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CreatedAt], [t].[Description], [t].[IsCompleted], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__taskId_0 AND [t].[UserId] = @__userId_1
+2026-03-19 17:26:26.114 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__task_Id_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CreatedAt], [t].[Description], [t].[IsCompleted], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__task_Id_0 AND [t].[UserId] = @__userId_1
+2026-03-19 17:26:26.289 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Tasks] SET [Title] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2026-03-19 17:26:26.315 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagerAPIs_Review.Models.Task'.
+2026-03-19 17:26:26.318 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.UpdateTask (TaskManagerAPIs_Review) in 311.9762ms
+2026-03-19 17:26:26.322 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.UpdateTask (TaskManagerAPIs_Review)'
+2026-03-19 17:26:26.325 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7143/api/Tasks/2 - 200 null application/json; charset=utf-8 362.3197ms
+2026-03-19 17:26:32.931 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7143/api/Tasks - null null
+2026-03-19 17:26:32.944 +05:30 [INF] Executing endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 17:26:32.947 +05:30 [INF] Route matched with {action = "GetAll", controller = "Tasks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagerAPIs_Review.Controllers.TasksController (TaskManagerAPIs_Review).
+2026-03-19 17:26:33.045 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[Description], [t].[IsCompleted], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+WHERE [t].[UserId] = @__userId_0
+2026-03-19 17:26:33.062 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagerAPIs_Review.Models.Task, TaskManagerAPIs_Review, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-19 17:26:33.066 +05:30 [INF] Executed action TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review) in 113.6974ms
+2026-03-19 17:26:33.070 +05:30 [INF] Executed endpoint 'TaskManagerAPIs_Review.Controllers.TasksController.GetAll (TaskManagerAPIs_Review)'
+2026-03-19 17:26:33.073 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7143/api/Tasks - 200 null application/json; charset=utf-8 142.3885ms

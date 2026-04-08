@@ -1,0 +1,280 @@
+{
+  "info": {
+    "_postman_id": "2b18054f-66aa-4a51-a114-906877ab1fca",
+    "name": "TaskManagerAPIs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "25021201"
+  },
+  "item": [
+    {
+      "name": "User",
+      "item": [
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"username\": \"asus\",\r\n  \"password\": \"asus\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7143/api/Auth/login",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7143",
+              "path": [
+                "api",
+                "Auth",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"username\": \"asus\",\r\n  \"passwordHash\": \"asus\",\r\n  \"role\": \"user\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7143/api/Auth/register",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7143",
+              "path": [
+                "api",
+                "Auth",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Tasks",
+      "item": [
+        {
+          "name": "GetAll",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0IiwidW5pcXVlX25hbWUiOiJhc3VzIiwicm9sZSI6InVzZXIiLCJuYmYiOjE3NzM5Nzc3NjcsImV4cCI6MTc3Mzk4MTM2NywiaWF0IjoxNzczOTc3NzY3LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hZ2VyVXNlcnMifQ.ge7BS_4cmnozE1IJp12g4Re_QatGLS8OTu6dqxuCUr0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7143/api/tasks",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7143",
+              "path": [
+                "api",
+                "tasks"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0IiwidW5pcXVlX25hbWUiOiJhc3VzIiwicm9sZSI6InVzZXIiLCJuYmYiOjE3NzM5Nzc3NjcsImV4cCI6MTc3Mzk4MTM2NywiaWF0IjoxNzczOTc3NzY3LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hZ2VyVXNlcnMifQ.ge7BS_4cmnozE1IJp12g4Re_QatGLS8OTu6dqxuCUr0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"by asus\",\r\n  \"description\": \"string\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7143/api/tasks",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7143",
+              "path": [
+                "api",
+                "tasks"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetById",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7143/api/tasks/5",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7143",
+              "path": [
+                "api",
+                "tasks",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"asus task\",\r\n  \"description\": \"string\",\r\n  \"isCompleted\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7143/api/tasks/5",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7143",
+              "path": [
+                "api",
+                "tasks",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"asus task\",\r\n  \"description\": \"string\",\r\n  \"isCompleted\": true\r\n}"
+            },
+            "url": {
+              "raw": "https://localhost:7143/api/tasks/5",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7143",
+              "path": [
+                "api",
+                "tasks",
+                "5"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "MarkComplete",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Admin",
+      "item": [
+        {
+          "name": "GetAllTasks",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0IiwidW5pcXVlX25hbWUiOiJhc3VzIiwicm9sZSI6InVzZXIiLCJuYmYiOjE3NzM5Nzc3NjcsImV4cCI6MTc3Mzk4MTM2NywiaWF0IjoxNzczOTc3NzY3LCJpc3MiOiJUYXNrTWFuYWdlciIsImF1ZCI6IlRhc2tNYW5hZ2VyVXNlcnMifQ.ge7BS_4cmnozE1IJp12g4Re_QatGLS8OTu6dqxuCUr0",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}
