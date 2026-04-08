@@ -1,0 +1,555 @@
+2026-03-21 09:43:51.602 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-21 09:43:52.897 +05:30 [INF] Now listening on: https://localhost:7119
+2026-03-21 09:43:52.907 +05:30 [INF] Now listening on: http://localhost:5004
+2026-03-21 09:43:53.667 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-21 09:43:53.672 +05:30 [INF] Hosting environment: Development
+2026-03-21 09:43:53.676 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes
+2026-03-21 09:43:55.186 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - null null
+2026-03-21 09:43:56.449 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - 200 null text/html;charset=utf-8 1283.7618ms
+2026-03-21 09:43:56.567 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-21 09:43:56.579 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - null null
+2026-03-21 09:43:56.624 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 57.8603ms
+2026-03-21 09:43:56.893 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - 200 null text/javascript; charset=UTF-8 313.8016ms
+2026-03-21 09:43:57.047 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - null null
+2026-03-21 09:43:57.110 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 64.0765ms
+2026-03-21 10:23:54.076 +05:30 [INF] Executed DbCommand (238ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [FundooNotesDB];
+2026-03-21 10:23:54.196 +05:30 [INF] Executed DbCommand (76ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [FundooNotesDB] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2026-03-21 10:23:54.221 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-03-21 10:23:54.296 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2026-03-21 10:23:54.298 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-03-21 10:23:54.315 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-03-21 10:23:54.330 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-03-21 10:23:54.347 +05:30 [INF] Applying migration '20260321045241_final'.
+2026-03-21 10:23:54.405 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Users] (
+    [UserId] int NOT NULL IDENTITY,
+    [FirstName] nvarchar(max) NOT NULL,
+    [LastName] nvarchar(max) NOT NULL,
+    [Email] nvarchar(max) NOT NULL,
+    [Password] nvarchar(max) NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    [LastModifiedAt] datetime2 NOT NULL,
+    [ResetToken] nvarchar(max) NULL,
+    CONSTRAINT [PK_Users] PRIMARY KEY ([UserId])
+);
+2026-03-21 10:23:54.410 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Labels] (
+    [LabelId] int NOT NULL IDENTITY,
+    [LabelName] nvarchar(450) NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    [UpdatedAt] datetime2 NOT NULL,
+    [UserId] int NOT NULL,
+    CONSTRAINT [PK_Labels] PRIMARY KEY ([LabelId]),
+    CONSTRAINT [FK_Labels_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([UserId])
+);
+2026-03-21 10:23:54.416 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Notes] (
+    [NoteId] int NOT NULL IDENTITY,
+    [Title] nvarchar(max) NOT NULL,
+    [Description] nvarchar(max) NOT NULL,
+    [Reminder] datetime2 NULL,
+    [Colour] nvarchar(max) NOT NULL,
+    [Image] nvarchar(max) NULL,
+    [IsArchived] bit NOT NULL,
+    [IsPin] bit NOT NULL,
+    [IsTrash] bit NOT NULL,
+    [UserId] int NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    [LastModifiedAt] datetime2 NOT NULL,
+    CONSTRAINT [PK_Notes] PRIMARY KEY ([NoteId]),
+    CONSTRAINT [FK_Notes_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([UserId]) ON DELETE CASCADE
+);
+2026-03-21 10:23:54.420 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [UserSessions] (
+    [SessionId] int NOT NULL IDENTITY,
+    [UserId] int NOT NULL,
+    [Token] nvarchar(max) NOT NULL,
+    [LoginTime] datetime2 NOT NULL,
+    [LogoutTime] datetime2 NOT NULL,
+    [IsActive] bit NOT NULL,
+    CONSTRAINT [PK_UserSessions] PRIMARY KEY ([SessionId]),
+    CONSTRAINT [FK_UserSessions_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([UserId]) ON DELETE CASCADE
+);
+2026-03-21 10:23:54.423 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Collaborators] (
+    [CollaboratorId] int NOT NULL IDENTITY,
+    [Email] nvarchar(max) NOT NULL,
+    [NoteId] int NOT NULL,
+    [UserId] int NOT NULL,
+    CONSTRAINT [PK_Collaborators] PRIMARY KEY ([CollaboratorId]),
+    CONSTRAINT [FK_Collaborators_Notes_NoteId] FOREIGN KEY ([NoteId]) REFERENCES [Notes] ([NoteId]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Collaborators_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([UserId])
+);
+2026-03-21 10:23:54.426 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [NoteLabels] (
+    [NoteId] int NOT NULL,
+    [LabelId] int NOT NULL,
+    CONSTRAINT [PK_NoteLabels] PRIMARY KEY ([NoteId], [LabelId]),
+    CONSTRAINT [FK_NoteLabels_Labels_LabelId] FOREIGN KEY ([LabelId]) REFERENCES [Labels] ([LabelId]) ON DELETE CASCADE,
+    CONSTRAINT [FK_NoteLabels_Notes_NoteId] FOREIGN KEY ([NoteId]) REFERENCES [Notes] ([NoteId]) ON DELETE CASCADE
+);
+2026-03-21 10:23:54.431 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Collaborators_NoteId] ON [Collaborators] ([NoteId]);
+2026-03-21 10:23:54.433 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Collaborators_UserId] ON [Collaborators] ([UserId]);
+2026-03-21 10:23:54.436 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_Labels_LabelName_UserId] ON [Labels] ([LabelName], [UserId]);
+2026-03-21 10:23:54.438 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Labels_UserId] ON [Labels] ([UserId]);
+2026-03-21 10:23:54.440 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_NoteLabels_LabelId] ON [NoteLabels] ([LabelId]);
+2026-03-21 10:23:54.442 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Notes_UserId] ON [Notes] ([UserId]);
+2026-03-21 10:23:54.957 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_UserSessions_UserId] ON [UserSessions] ([UserId]);
+2026-03-21 10:23:54.963 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260321045241_final', N'8.0.25');
+2026-03-21 10:35:44.576 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-21 10:35:45.208 +05:30 [INF] Now listening on: https://localhost:7119
+2026-03-21 10:35:45.211 +05:30 [INF] Now listening on: http://localhost:5004
+2026-03-21 10:35:45.295 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-21 10:35:45.298 +05:30 [INF] Hosting environment: Development
+2026-03-21 10:35:45.302 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes
+2026-03-21 10:35:46.636 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - null null
+2026-03-21 10:35:47.152 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - 200 null text/html;charset=utf-8 532.5408ms
+2026-03-21 10:35:47.213 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - null null
+2026-03-21 10:35:47.224 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-21 10:35:47.280 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 55.9853ms
+2026-03-21 10:35:47.352 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - 200 null text/javascript; charset=UTF-8 139.7404ms
+2026-03-21 10:35:47.481 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - null null
+2026-03-21 10:35:47.532 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 51.2837ms
+2026-03-21 10:36:58.378 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-21 10:36:58.840 +05:30 [INF] Now listening on: https://localhost:7119
+2026-03-21 10:36:58.843 +05:30 [INF] Now listening on: http://localhost:5004
+2026-03-21 10:36:58.922 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-21 10:36:58.924 +05:30 [INF] Hosting environment: Development
+2026-03-21 10:36:58.927 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes
+2026-03-21 10:36:59.838 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - null null
+2026-03-21 10:37:00.257 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - 200 null text/html;charset=utf-8 431.1131ms
+2026-03-21 10:37:00.321 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-21 10:37:00.321 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - null null
+2026-03-21 10:37:00.344 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 24.5261ms
+2026-03-21 10:37:00.433 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - 200 null text/javascript; charset=UTF-8 112.5011ms
+2026-03-21 10:37:00.494 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - null null
+2026-03-21 10:37:00.539 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 45.035ms
+2026-03-21 10:37:17.916 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/Label/1 - null null
+2026-03-21 10:37:19.884 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-03-21 10:37:19.895 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-03-21 10:37:19.899 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/Label/1 - 401 0 null 1983.1129ms
+2026-03-21 10:37:46.293 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/User/register - application/json 110
+2026-03-21 10:37:46.329 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-21 10:37:46.369 +05:30 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(fundooNotes.DTOs.Auth.RegisterDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-21 10:37:46.708 +05:30 [INF] Register API called for Email: pv@gmail.com
+2026-03-21 10:37:49.228 +05:30 [INF] Executed DbCommand (174ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-21 10:37:49.554 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedAt], [Email], [FirstName], [LastModifiedAt], [LastName], [Password], [ResetToken])
+OUTPUT INSERTED.[UserId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-03-21 10:37:49.597 +05:30 [INF] User registered successfully: pv@gmail.com
+2026-03-21 10:37:49.613 +05:30 [INF] Executing OkObjectResult, writing value of type 'fundooNotes.Models.User'.
+2026-03-21 10:37:49.660 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Register (fundooNotes) in 3278.4369ms
+2026-03-21 10:37:49.663 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-21 10:37:49.679 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/User/register - 200 null application/json; charset=utf-8 3385.8285ms
+2026-03-21 10:38:58.159 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/User/login - application/json 57
+2026-03-21 10:38:58.181 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-21 10:38:58.191 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(fundooNotes.DTOs.Auth.LoginDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-21 10:38:58.200 +05:30 [INF] Login API called for Email: pv@gmail.com
+2026-03-21 10:38:58.262 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-21 10:38:58.453 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [UserSessions] ([IsActive], [LoginTime], [LogoutTime], [Token], [UserId])
+OUTPUT INSERTED.[SessionId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-03-21 10:38:58.460 +05:30 [INF] User logged in successfully: pv@gmail.com
+2026-03-21 10:38:58.463 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-21 10:38:58.469 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Login (fundooNotes) in 274.2821ms
+2026-03-21 10:38:58.473 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-21 10:38:58.475 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/User/login - 200 null application/json; charset=utf-8 315.9092ms
+2026-03-21 10:39:12.227 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/User/logout - null 0
+2026-03-21 10:39:12.253 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-03-21 10:39:12.256 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-03-21 10:39:12.259 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/User/logout - 401 0 null 32.7261ms
+2026-03-21 10:39:34.228 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/Label/1 - null null
+2026-03-21 10:39:34.334 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.LabelController.GetNotes (fundooNotes)'
+2026-03-21 10:39:34.339 +05:30 [INF] Route matched with {action = "GetNotes", controller = "Label"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNotes(Int32) on controller fundooNotes.Controllers.LabelController (fundooNotes).
+2026-03-21 10:39:34.345 +05:30 [INF] Executed action fundooNotes.Controllers.LabelController.GetNotes (fundooNotes) in 2.5672ms
+2026-03-21 10:39:34.351 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.LabelController.GetNotes (fundooNotes)'
+2026-03-21 10:39:34.358 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'fundooNotes.Services.Interfaces.ILabelService' while attempting to activate 'fundooNotes.Controllers.LabelController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method194(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-03-21 10:39:34.406 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/Label/1 - 500 null text/plain; charset=utf-8 177.7776ms
+2026-03-21 10:39:56.300 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/Label/1 - null null
+2026-03-21 10:39:56.328 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.LabelController.GetNotes (fundooNotes)'
+2026-03-21 10:39:56.332 +05:30 [INF] Route matched with {action = "GetNotes", controller = "Label"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNotes(Int32) on controller fundooNotes.Controllers.LabelController (fundooNotes).
+2026-03-21 10:39:56.338 +05:30 [INF] Executed action fundooNotes.Controllers.LabelController.GetNotes (fundooNotes) in 1.3772ms
+2026-03-21 10:39:56.342 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.LabelController.GetNotes (fundooNotes)'
+2026-03-21 10:39:56.349 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'fundooNotes.Services.Interfaces.ILabelService' while attempting to activate 'fundooNotes.Controllers.LabelController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method194(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-03-21 10:39:56.364 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/Label/1 - 500 null text/plain; charset=utf-8 64.7341ms
+2026-03-21 10:42:09.973 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-21 10:42:10.522 +05:30 [INF] Now listening on: https://localhost:7119
+2026-03-21 10:42:10.525 +05:30 [INF] Now listening on: http://localhost:5004
+2026-03-21 10:42:10.622 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-21 10:42:10.625 +05:30 [INF] Hosting environment: Development
+2026-03-21 10:42:10.628 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes
+2026-03-21 10:42:11.615 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - null null
+2026-03-21 10:42:12.017 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - 200 null text/html;charset=utf-8 411.6038ms
+2026-03-21 10:42:12.076 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-21 10:42:12.079 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - null null
+2026-03-21 10:42:12.106 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 31.2539ms
+2026-03-21 10:42:12.188 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - 200 null text/javascript; charset=UTF-8 113.6397ms
+2026-03-21 10:42:12.256 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - null null
+2026-03-21 10:42:12.305 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 49.837ms
+2026-03-21 10:42:38.498 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/User/login - application/json 57
+2026-03-21 10:42:38.655 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-21 10:42:38.700 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(fundooNotes.DTOs.Auth.LoginDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-21 10:42:39.000 +05:30 [INF] Login API called for Email: pv@gmail.com
+2026-03-21 10:42:41.023 +05:30 [INF] Executed DbCommand (49ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-21 10:42:41.399 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [UserSessions] ([IsActive], [LoginTime], [LogoutTime], [Token], [UserId])
+OUTPUT INSERTED.[SessionId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-03-21 10:42:41.432 +05:30 [INF] User logged in successfully: pv@gmail.com
+2026-03-21 10:42:41.442 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-21 10:42:41.455 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Login (fundooNotes) in 2745.2386ms
+2026-03-21 10:42:41.458 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-21 10:42:41.471 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/User/login - 200 null application/json; charset=utf-8 2973.2133ms
+2026-03-21 10:43:27.588 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/Notes - application/json 106
+2026-03-21 10:43:27.685 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.CreateNote (fundooNotes)'
+2026-03-21 10:43:27.699 +05:30 [INF] Route matched with {action = "CreateNote", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateNote(fundooNotes.DTOs.Notes.CreateNoteDTO) on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-03-21 10:43:27.858 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime2), @p8='?' (DbType = DateTime2), @p9='?' (Size = 4000), @p10='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Notes] ([Colour], [CreatedDate], [Description], [Image], [IsArchived], [IsPin], [IsTrash], [LastModifiedAt], [Reminder], [Title], [UserId])
+OUTPUT INSERTED.[NoteId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2026-03-21 10:43:42.729 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.CreateNote (fundooNotes) in 15025.1943ms
+2026-03-21 10:43:42.734 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.CreateNote (fundooNotes)'
+2026-03-21 10:43:42.745 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=DEL, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Idle, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: UNKNOWN(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=0,Free=32767,Min=8,Max=32767), POOL: (Threads=7,QueuedItems=0,CompletedItems=353,Timers=7), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.RemoveAsync(String key, CancellationToken token)
+   at fundooNotes.Services.Implementations.NotesService.CreateNote(CreateNoteDTO dto, Int32 userId) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Services\Implementations\NotesService.cs:line 36
+   at fundooNotes.Controllers.NotesController.CreateNote(CreateNoteDTO dto) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Controllers\NotesController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-03-21 10:43:42.842 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/Notes - 500 null text/plain; charset=utf-8 15254.2503ms
+2026-03-21 10:44:07.352 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/Notes - application/json 106
+2026-03-21 10:44:07.368 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.CreateNote (fundooNotes)'
+2026-03-21 10:44:07.372 +05:30 [INF] Route matched with {action = "CreateNote", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateNote(fundooNotes.DTOs.Notes.CreateNoteDTO) on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-03-21 10:44:07.472 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime2), @p8='?' (DbType = DateTime2), @p9='?' (Size = 4000), @p10='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Notes] ([Colour], [CreatedDate], [Description], [Image], [IsArchived], [IsPin], [IsTrash], [LastModifiedAt], [Reminder], [Title], [UserId])
+OUTPUT INSERTED.[NoteId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2026-03-21 10:44:07.487 +05:30 [INF] Executing OkObjectResult, writing value of type 'fundooNotes.DTOs.Notes.NoteResponseDTO'.
+2026-03-21 10:44:07.499 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.CreateNote (fundooNotes) in 123.0946ms
+2026-03-21 10:44:07.507 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.CreateNote (fundooNotes)'
+2026-03-21 10:44:07.510 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/Notes - 200 null application/json; charset=utf-8 157.9494ms
+2026-03-21 10:44:42.587 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7119/api/Notes/permanent/2 - null null
+2026-03-21 10:44:42.606 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.DeleteNotePermanent (fundooNotes)'
+2026-03-21 10:44:42.612 +05:30 [INF] Route matched with {action = "DeleteNotePermanent", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteNotePermanent(Int32) on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-03-21 10:44:42.664 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[@__noteId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[NoteId] = @__noteId_0 AND [n].[UserId] = @__userId_1 AND [n].[IsTrash] = CAST(1 AS bit)
+2026-03-21 10:44:42.671 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2026-03-21 10:44:42.674 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.DeleteNotePermanent (fundooNotes) in 55.5071ms
+2026-03-21 10:44:42.678 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.DeleteNotePermanent (fundooNotes)'
+2026-03-21 10:44:42.680 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7119/api/Notes/permanent/2 - 404 null text/plain; charset=utf-8 93.043ms
+2026-03-21 10:44:49.285 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7119/api/Notes/2 - null null
+2026-03-21 10:44:49.299 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.DeleteNote (fundooNotes)'
+2026-03-21 10:44:49.308 +05:30 [INF] Route matched with {action = "DeleteNote", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteNote(Int32) on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-03-21 10:44:49.334 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__noteId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[NoteId] = @__noteId_0 AND [n].[UserId] = @__userId_1
+2026-03-21 10:44:49.418 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@__note_NoteId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[NoteId] = @__note_NoteId_0 AND ([n].[UserId] = @__userId_1 OR EXISTS (
+    SELECT 1
+    FROM [Collaborators] AS [c]
+    WHERE [c].[NoteId] = [n].[NoteId] AND [c].[UserId] = @__userId_1))
+2026-03-21 10:44:49.438 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Notes] SET [IsTrash] = @p0, [LastModifiedAt] = @p1
+OUTPUT 1
+WHERE [NoteId] = @p2;
+2026-03-21 10:44:49.450 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-03-21 10:44:49.455 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.DeleteNote (fundooNotes) in 142.3079ms
+2026-03-21 10:44:49.459 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.DeleteNote (fundooNotes)'
+2026-03-21 10:44:49.462 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7119/api/Notes/2 - 200 null text/plain; charset=utf-8 177.1923ms
+2026-03-21 10:44:52.581 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7119/api/Notes/permanent/2 - null null
+2026-03-21 10:44:52.590 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.DeleteNotePermanent (fundooNotes)'
+2026-03-21 10:44:52.593 +05:30 [INF] Route matched with {action = "DeleteNotePermanent", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteNotePermanent(Int32) on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-03-21 10:44:52.612 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__noteId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[NoteId] = @__noteId_0 AND [n].[UserId] = @__userId_1 AND [n].[IsTrash] = CAST(1 AS bit)
+2026-03-21 10:44:52.659 +05:30 [INF] Executed DbCommand (30ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Notes]
+OUTPUT 1
+WHERE [NoteId] = @p0;
+2026-03-21 10:44:52.669 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-03-21 10:44:52.672 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.DeleteNotePermanent (fundooNotes) in 73.3846ms
+2026-03-21 10:44:52.675 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.DeleteNotePermanent (fundooNotes)'
+2026-03-21 10:44:52.678 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7119/api/Notes/permanent/2 - 200 null text/plain; charset=utf-8 97.0341ms
+2026-03-21 10:45:38.531 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/Label - application/json 25
+2026-03-21 10:45:38.567 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.LabelController.CreateLabel (fundooNotes)'
+2026-03-21 10:45:38.572 +05:30 [INF] Route matched with {action = "CreateLabel", controller = "Label"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateLabel(fundooNotes.DTOs.Labels.CreateLabelDTO) on controller fundooNotes.Controllers.LabelController (fundooNotes).
+2026-03-21 10:45:38.616 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 450), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Labels] ([CreatedAt], [LabelName], [UpdatedAt], [UserId])
+OUTPUT INSERTED.[LabelId]
+VALUES (@p0, @p1, @p2, @p3);
+2026-03-21 10:45:38.624 +05:30 [INF] Executing OkObjectResult, writing value of type 'fundooNotes.Models.Label'.
+2026-03-21 10:45:38.636 +05:30 [INF] Executed action fundooNotes.Controllers.LabelController.CreateLabel (fundooNotes) in 58.5496ms
+2026-03-21 10:45:38.641 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.LabelController.CreateLabel (fundooNotes)'
+2026-03-21 10:45:38.644 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/Label - 200 null application/json; charset=utf-8 113.4869ms
+2026-03-21 10:45:53.634 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/Label/add - application/json 33
+2026-03-21 10:45:53.647 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.LabelController.AddLabel (fundooNotes)'
+2026-03-21 10:45:53.652 +05:30 [INF] Route matched with {action = "AddLabel", controller = "Label"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddLabel(fundooNotes.DTOs.Labels.AddLabelToNoteDTO) on controller fundooNotes.Controllers.LabelController (fundooNotes).
+2026-03-21 10:45:53.695 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__noteId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Notes] AS [n]
+        WHERE [n].[NoteId] = @__noteId_0 AND [n].[UserId] = @__userId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-21 10:45:53.716 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@__labelId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Labels] AS [l]
+        WHERE [l].[LabelId] = @__labelId_0 AND [l].[UserId] = @__userId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-21 10:45:53.730 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__noteId_0='?' (DbType = Int32), @__labelId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [NoteLabels] AS [n]
+        WHERE [n].[NoteId] = @__noteId_0 AND [n].[LabelId] = @__labelId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-21 10:45:53.758 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [NoteLabels] ([LabelId], [NoteId])
+VALUES (@p0, @p1);
+2026-03-21 10:45:53.764 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2026-03-21 10:45:53.772 +05:30 [INF] Executed action fundooNotes.Controllers.LabelController.AddLabel (fundooNotes) in 112.0232ms
+2026-03-21 10:45:53.778 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.LabelController.AddLabel (fundooNotes)'
+2026-03-21 10:45:53.781 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/Label/add - 200 null application/json; charset=utf-8 146.9353ms
+2026-03-21 10:46:27.280 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/Label/note/1 - null null
+2026-03-21 10:46:27.298 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.LabelController.GetLabels (fundooNotes)'
+2026-03-21 10:46:27.302 +05:30 [INF] Route matched with {action = "GetLabels", controller = "Label"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLabels(Int32) on controller fundooNotes.Controllers.LabelController (fundooNotes).
+2026-03-21 10:46:27.315 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__noteId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Notes] AS [n]
+        WHERE [n].[NoteId] = @__noteId_0 AND [n].[UserId] = @__userId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-21 10:46:27.390 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__noteId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LabelId], [l].[CreatedAt], [l].[LabelName], [l].[UpdatedAt], [l].[UserId]
+FROM [NoteLabels] AS [n]
+INNER JOIN [Labels] AS [l] ON [n].[LabelId] = [l].[LabelId]
+WHERE [n].[NoteId] = @__noteId_0
+2026-03-21 10:46:27.396 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.Models.Label, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-21 10:46:27.400 +05:30 [INF] Executed action fundooNotes.Controllers.LabelController.GetLabels (fundooNotes) in 92.3718ms
+2026-03-21 10:46:27.407 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.LabelController.GetLabels (fundooNotes)'
+2026-03-21 10:46:27.416 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/Label/note/1 - 200 null application/json; charset=utf-8 137.3346ms
+2026-03-21 10:46:36.789 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/Label/1 - null null
+2026-03-21 10:46:36.798 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.LabelController.GetNotes (fundooNotes)'
+2026-03-21 10:46:36.805 +05:30 [INF] Route matched with {action = "GetNotes", controller = "Label"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNotes(Int32) on controller fundooNotes.Controllers.LabelController (fundooNotes).
+2026-03-21 10:46:36.818 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__labelId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Labels] AS [l]
+        WHERE [l].[LabelId] = @__labelId_0 AND [l].[UserId] = @__userId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-21 10:46:36.851 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__labelId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n0].[NoteId], [n0].[Colour], [n0].[CreatedDate], [n0].[Description], [n0].[Image], [n0].[IsArchived], [n0].[IsPin], [n0].[IsTrash], [n0].[LastModifiedAt], [n0].[Reminder], [n0].[Title], [n0].[UserId]
+FROM [NoteLabels] AS [n]
+INNER JOIN [Notes] AS [n0] ON [n].[NoteId] = [n0].[NoteId]
+WHERE [n].[LabelId] = @__labelId_0
+2026-03-21 10:46:36.859 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.Models.Note, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-21 10:46:36.867 +05:30 [INF] Executed action fundooNotes.Controllers.LabelController.GetNotes (fundooNotes) in 56.4877ms
+2026-03-21 10:46:36.873 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.LabelController.GetNotes (fundooNotes)'
+2026-03-21 10:46:36.876 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/Label/1 - 200 null application/json; charset=utf-8 87.3776ms
+2026-03-21 10:46:50.635 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/Notes - application/json 107
+2026-03-21 10:46:50.643 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.CreateNote (fundooNotes)'
+2026-03-21 10:46:50.647 +05:30 [INF] Route matched with {action = "CreateNote", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateNote(fundooNotes.DTOs.Notes.CreateNoteDTO) on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-03-21 10:46:50.673 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime2), @p8='?' (DbType = DateTime2), @p9='?' (Size = 4000), @p10='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Notes] ([Colour], [CreatedDate], [Description], [Image], [IsArchived], [IsPin], [IsTrash], [LastModifiedAt], [Reminder], [Title], [UserId])
+OUTPUT INSERTED.[NoteId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2026-03-21 10:46:50.683 +05:30 [INF] Executing OkObjectResult, writing value of type 'fundooNotes.DTOs.Notes.NoteResponseDTO'.
+2026-03-21 10:46:50.689 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.CreateNote (fundooNotes) in 34.5132ms
+2026-03-21 10:46:50.693 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.CreateNote (fundooNotes)'
+2026-03-21 10:46:50.696 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/Notes - 200 null application/json; charset=utf-8 61.3165ms
+2026-03-21 10:47:00.063 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/Label/add - application/json 33
+2026-03-21 10:47:00.070 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.LabelController.AddLabel (fundooNotes)'
+2026-03-21 10:47:00.074 +05:30 [INF] Route matched with {action = "AddLabel", controller = "Label"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddLabel(fundooNotes.DTOs.Labels.AddLabelToNoteDTO) on controller fundooNotes.Controllers.LabelController (fundooNotes).
+2026-03-21 10:47:00.089 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__noteId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Notes] AS [n]
+        WHERE [n].[NoteId] = @__noteId_0 AND [n].[UserId] = @__userId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-21 10:47:00.099 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__labelId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Labels] AS [l]
+        WHERE [l].[LabelId] = @__labelId_0 AND [l].[UserId] = @__userId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-21 10:47:00.114 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__noteId_0='?' (DbType = Int32), @__labelId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [NoteLabels] AS [n]
+        WHERE [n].[NoteId] = @__noteId_0 AND [n].[LabelId] = @__labelId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-21 10:47:00.126 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [NoteLabels] ([LabelId], [NoteId])
+VALUES (@p0, @p1);
+2026-03-21 10:47:00.131 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2026-03-21 10:47:00.140 +05:30 [INF] Executed action fundooNotes.Controllers.LabelController.AddLabel (fundooNotes) in 61.17ms
+2026-03-21 10:47:00.145 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.LabelController.AddLabel (fundooNotes)'
+2026-03-21 10:47:00.148 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/Label/add - 200 null application/json; charset=utf-8 85.1395ms
+2026-03-21 10:47:05.219 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/Label/note/3 - null null
+2026-03-21 10:47:05.227 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.LabelController.GetLabels (fundooNotes)'
+2026-03-21 10:47:05.229 +05:30 [INF] Route matched with {action = "GetLabels", controller = "Label"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLabels(Int32) on controller fundooNotes.Controllers.LabelController (fundooNotes).
+2026-03-21 10:47:05.240 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__noteId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Notes] AS [n]
+        WHERE [n].[NoteId] = @__noteId_0 AND [n].[UserId] = @__userId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-21 10:47:05.250 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__noteId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LabelId], [l].[CreatedAt], [l].[LabelName], [l].[UpdatedAt], [l].[UserId]
+FROM [NoteLabels] AS [n]
+INNER JOIN [Labels] AS [l] ON [n].[LabelId] = [l].[LabelId]
+WHERE [n].[NoteId] = @__noteId_0
+2026-03-21 10:47:05.257 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.Models.Label, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-21 10:47:05.260 +05:30 [INF] Executed action fundooNotes.Controllers.LabelController.GetLabels (fundooNotes) in 25.3919ms
+2026-03-21 10:47:05.264 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.LabelController.GetLabels (fundooNotes)'
+2026-03-21 10:47:05.268 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/Label/note/3 - 200 null application/json; charset=utf-8 48.9949ms
+2026-03-21 10:47:10.900 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/Label/1 - null null
+2026-03-21 10:47:10.909 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.LabelController.GetNotes (fundooNotes)'
+2026-03-21 10:47:10.912 +05:30 [INF] Route matched with {action = "GetNotes", controller = "Label"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNotes(Int32) on controller fundooNotes.Controllers.LabelController (fundooNotes).
+2026-03-21 10:47:10.923 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__labelId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Labels] AS [l]
+        WHERE [l].[LabelId] = @__labelId_0 AND [l].[UserId] = @__userId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-21 10:47:10.932 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__labelId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n0].[NoteId], [n0].[Colour], [n0].[CreatedDate], [n0].[Description], [n0].[Image], [n0].[IsArchived], [n0].[IsPin], [n0].[IsTrash], [n0].[LastModifiedAt], [n0].[Reminder], [n0].[Title], [n0].[UserId]
+FROM [NoteLabels] AS [n]
+INNER JOIN [Notes] AS [n0] ON [n].[NoteId] = [n0].[NoteId]
+WHERE [n].[LabelId] = @__labelId_0
+2026-03-21 10:47:10.938 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.Models.Note, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-21 10:47:10.940 +05:30 [INF] Executed action fundooNotes.Controllers.LabelController.GetNotes (fundooNotes) in 23.0941ms
+2026-03-21 10:47:10.944 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.LabelController.GetNotes (fundooNotes)'
+2026-03-21 10:47:10.946 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/Label/1 - 200 null application/json; charset=utf-8 46.3431ms

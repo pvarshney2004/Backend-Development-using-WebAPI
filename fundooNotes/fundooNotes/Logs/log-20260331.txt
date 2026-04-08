@@ -1,0 +1,704 @@
+2026-03-31 14:52:20.810 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-31 14:52:21.654 +05:30 [INF] Now listening on: https://localhost:7119
+2026-03-31 14:52:21.657 +05:30 [INF] Now listening on: http://localhost:5004
+2026-03-31 14:52:21.934 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-31 14:52:21.937 +05:30 [INF] Hosting environment: Development
+2026-03-31 14:52:21.940 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes
+2026-03-31 14:52:22.787 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - null null
+2026-03-31 14:52:23.407 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - 200 null text/html;charset=utf-8 638.7395ms
+2026-03-31 14:52:23.519 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-31 14:52:23.526 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - null null
+2026-03-31 14:52:23.555 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 36.6812ms
+2026-03-31 14:52:23.699 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - 200 null text/javascript; charset=UTF-8 177.0626ms
+2026-03-31 14:52:23.924 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - null null
+2026-03-31 14:52:23.996 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 72.6928ms
+2026-03-31 15:15:51.550 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-31 15:15:52.152 +05:30 [INF] Now listening on: https://localhost:7119
+2026-03-31 15:15:52.155 +05:30 [INF] Now listening on: http://localhost:5004
+2026-03-31 15:15:52.242 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-31 15:15:52.244 +05:30 [INF] Hosting environment: Development
+2026-03-31 15:15:52.247 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes
+2026-03-31 15:15:53.008 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - null null
+2026-03-31 15:15:53.518 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - 200 null text/html;charset=utf-8 521.0915ms
+2026-03-31 15:15:53.596 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-31 15:15:53.596 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - null null
+2026-03-31 15:15:53.645 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 48.4414ms
+2026-03-31 15:15:53.752 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - 200 null text/javascript; charset=UTF-8 155.6849ms
+2026-03-31 15:15:53.827 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - null null
+2026-03-31 15:15:53.891 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 65.7624ms
+2026-03-31 15:23:09.283 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/register - null null
+2026-03-31 15:23:11.044 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-03-31 15:23:11.048 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-03-31 15:23:11.051 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/register - 405 0 null 1768.7725ms
+2026-03-31 15:25:46.827 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-31 15:25:47.744 +05:30 [INF] Now listening on: https://localhost:7119
+2026-03-31 15:25:47.747 +05:30 [INF] Now listening on: http://localhost:5004
+2026-03-31 15:25:47.869 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-31 15:25:47.872 +05:30 [INF] Hosting environment: Development
+2026-03-31 15:25:47.876 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes
+2026-03-31 15:25:48.844 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - null null
+2026-03-31 15:25:49.418 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - 200 null text/html;charset=utf-8 584.9787ms
+2026-03-31 15:25:49.499 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-31 15:25:49.503 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - null null
+2026-03-31 15:25:49.534 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 35.3224ms
+2026-03-31 15:25:49.657 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - 200 null text/javascript; charset=UTF-8 154.4502ms
+2026-03-31 15:25:49.766 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - null null
+2026-03-31 15:25:49.827 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 61.0901ms
+2026-03-31 15:26:52.656 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/register - null null
+2026-03-31 15:26:52.932 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-03-31 15:26:52.936 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-03-31 15:26:52.940 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/register - 405 0 null 284.3358ms
+2026-03-31 15:27:49.972 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/register - null null
+2026-03-31 15:27:49.998 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-03-31 15:27:50.010 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-03-31 15:27:50.013 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/register - 405 0 null 40.411ms
+2026-03-31 15:30:52.437 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-31 15:30:53.010 +05:30 [INF] Now listening on: https://localhost:7119
+2026-03-31 15:30:53.013 +05:30 [INF] Now listening on: http://localhost:5004
+2026-03-31 15:30:53.142 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-31 15:30:53.145 +05:30 [INF] Hosting environment: Development
+2026-03-31 15:30:53.148 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes
+2026-03-31 15:30:53.815 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - null null
+2026-03-31 15:30:54.226 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - 200 null text/html;charset=utf-8 419.9413ms
+2026-03-31 15:30:54.309 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-31 15:30:54.309 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - null null
+2026-03-31 15:30:54.330 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 22.3084ms
+2026-03-31 15:30:54.420 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - 200 null text/javascript; charset=UTF-8 111.9915ms
+2026-03-31 15:30:54.520 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - null null
+2026-03-31 15:30:54.564 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 44.0581ms
+2026-03-31 15:31:06.662 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/register - null null
+2026-03-31 15:31:06.678 +05:30 [INF] CORS policy execution successful.
+2026-03-31 15:31:06.682 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/register - 204 null null 20.0777ms
+2026-03-31 15:31:06.695 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/register - application/json 80
+2026-03-31 15:31:06.709 +05:30 [INF] CORS policy execution successful.
+2026-03-31 15:31:06.827 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 15:31:06.878 +05:30 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(fundooNotes.DTOs.Auth.RegisterDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 15:31:07.619 +05:30 [INF] Register API called for Email: pv2@gmail.com
+2026-03-31 15:31:10.908 +05:30 [INF] Executed DbCommand (139ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 15:31:11.219 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedAt], [Email], [FirstName], [LastModifiedAt], [LastName], [Password], [ResetToken])
+OUTPUT INSERTED.[UserId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-03-31 15:31:11.317 +05:30 [INF] User registered successfully: pv2@gmail.com
+2026-03-31 15:31:11.331 +05:30 [INF] Executing OkObjectResult, writing value of type 'fundooNotes.Models.User'.
+2026-03-31 15:31:11.370 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Register (fundooNotes) in 4482.348ms
+2026-03-31 15:31:11.374 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 15:31:11.387 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/register - 200 null application/json; charset=utf-8 4692.3522ms
+2026-03-31 15:41:45.132 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/register - null null
+2026-03-31 15:41:45.149 +05:30 [INF] CORS policy execution successful.
+2026-03-31 15:41:45.151 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/register - 204 null null 18.9033ms
+2026-03-31 15:41:45.155 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/register - application/json 94
+2026-03-31 15:41:45.164 +05:30 [INF] CORS policy execution successful.
+2026-03-31 15:41:45.168 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 15:41:45.172 +05:30 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(fundooNotes.DTOs.Auth.RegisterDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 15:41:45.179 +05:30 [INF] Register API called for Email: pv3@gmail.com
+2026-03-31 15:41:45.223 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 15:41:45.235 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedAt], [Email], [FirstName], [LastModifiedAt], [LastName], [Password], [ResetToken])
+OUTPUT INSERTED.[UserId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-03-31 15:41:45.241 +05:30 [INF] User registered successfully: pv3@gmail.com
+2026-03-31 15:41:45.243 +05:30 [INF] Executing OkObjectResult, writing value of type 'fundooNotes.Models.User'.
+2026-03-31 15:41:45.246 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Register (fundooNotes) in 69.4111ms
+2026-03-31 15:41:45.250 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 15:41:45.252 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/register - 200 null application/json; charset=utf-8 97.5546ms
+2026-03-31 15:56:31.160 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/login - null null
+2026-03-31 15:56:31.179 +05:30 [INF] CORS policy execution successful.
+2026-03-31 15:56:31.181 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/login - 204 null null 22.3042ms
+2026-03-31 15:56:31.185 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/login - application/json 48
+2026-03-31 15:56:31.194 +05:30 [INF] CORS policy execution successful.
+2026-03-31 15:56:31.198 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 15:56:31.205 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(fundooNotes.DTOs.Auth.LoginDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 15:56:31.217 +05:30 [INF] Login API called for Email: pv@gmail.com
+2026-03-31 15:56:31.308 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 15:56:31.555 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [UserSessions] ([IsActive], [LoginTime], [LogoutTime], [Token], [UserId])
+OUTPUT INSERTED.[SessionId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-03-31 15:56:31.561 +05:30 [INF] User logged in successfully: pv@gmail.com
+2026-03-31 15:56:31.564 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-31 15:56:31.570 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Login (fundooNotes) in 360.5417ms
+2026-03-31 15:56:31.573 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 15:56:31.576 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/login - 200 null application/json; charset=utf-8 391.0002ms
+2026-03-31 16:10:23.756 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/login - null null
+2026-03-31 16:10:23.776 +05:30 [INF] CORS policy execution successful.
+2026-03-31 16:10:23.779 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/login - 204 null null 22.7505ms
+2026-03-31 16:10:23.784 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/login - application/json 48
+2026-03-31 16:10:23.796 +05:30 [INF] CORS policy execution successful.
+2026-03-31 16:10:23.798 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 16:10:23.800 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(fundooNotes.DTOs.Auth.LoginDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 16:10:23.805 +05:30 [INF] Login API called for Email: pv@gmail.com
+2026-03-31 16:10:23.828 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 16:10:23.842 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [UserSessions] ([IsActive], [LoginTime], [LogoutTime], [Token], [UserId])
+OUTPUT INSERTED.[SessionId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-03-31 16:10:23.847 +05:30 [INF] User logged in successfully: pv@gmail.com
+2026-03-31 16:10:23.849 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-31 16:10:23.852 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Login (fundooNotes) in 47.5708ms
+2026-03-31 16:10:23.857 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 16:10:23.870 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/login - 200 null application/json; charset=utf-8 85.9911ms
+2026-03-31 16:11:22.368 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/login - null null
+2026-03-31 16:11:22.393 +05:30 [INF] CORS policy execution successful.
+2026-03-31 16:11:22.396 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/login - 204 null null 27.3939ms
+2026-03-31 16:11:22.399 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/login - application/json 48
+2026-03-31 16:11:22.409 +05:30 [INF] CORS policy execution successful.
+2026-03-31 16:11:22.411 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 16:11:22.414 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(fundooNotes.DTOs.Auth.LoginDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 16:11:22.418 +05:30 [INF] Login API called for Email: pv@gmail.com
+2026-03-31 16:11:22.425 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 16:11:22.435 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [UserSessions] ([IsActive], [LoginTime], [LogoutTime], [Token], [UserId])
+OUTPUT INSERTED.[SessionId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-03-31 16:11:22.440 +05:30 [INF] User logged in successfully: pv@gmail.com
+2026-03-31 16:11:22.442 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-31 16:11:22.445 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Login (fundooNotes) in 27.3165ms
+2026-03-31 16:11:22.448 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 16:11:22.451 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/login - 200 null application/json; charset=utf-8 51.4458ms
+2026-03-31 16:15:06.638 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/register - null null
+2026-03-31 16:15:06.653 +05:30 [INF] CORS policy execution successful.
+2026-03-31 16:15:06.655 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/register - 204 null null 17.0984ms
+2026-03-31 16:15:06.658 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/register - application/json 55
+2026-03-31 16:15:06.666 +05:30 [INF] CORS policy execution successful.
+2026-03-31 16:15:06.668 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 16:15:06.671 +05:30 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(fundooNotes.DTOs.Auth.RegisterDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 16:15:06.676 +05:30 [INF] Register API called for Email: 
+2026-03-31 16:15:06.685 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 16:15:06.693 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedAt], [Email], [FirstName], [LastModifiedAt], [LastName], [Password], [ResetToken])
+OUTPUT INSERTED.[UserId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-03-31 16:15:06.697 +05:30 [INF] User registered successfully: 
+2026-03-31 16:15:06.700 +05:30 [INF] Executing OkObjectResult, writing value of type 'fundooNotes.Models.User'.
+2026-03-31 16:15:06.703 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Register (fundooNotes) in 28.232ms
+2026-03-31 16:15:06.706 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 16:15:06.729 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/register - 200 null application/json; charset=utf-8 71.6952ms
+2026-03-31 16:15:39.847 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/register - null null
+2026-03-31 16:15:39.852 +05:30 [INF] CORS policy execution successful.
+2026-03-31 16:15:39.855 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/register - 204 null null 7.7596ms
+2026-03-31 16:15:39.858 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/register - application/json 55
+2026-03-31 16:15:39.869 +05:30 [INF] CORS policy execution successful.
+2026-03-31 16:15:39.871 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 16:15:39.873 +05:30 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(fundooNotes.DTOs.Auth.RegisterDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 16:15:39.880 +05:30 [INF] Register API called for Email: 
+2026-03-31 16:15:39.886 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 16:15:40.118 +05:30 [ERR] Error occurred during registration for Email: 
+System.Exception: User already exists
+   at fundooNotes.Services.Implementations.UserService.Register(RegisterDTO registerDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Services\Implementations\UserService.cs:line 26
+   at fundooNotes.Controllers.UserController.Register(RegisterDTO registerDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Controllers\UserController.cs:line 29
+2026-03-31 16:15:40.188 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-31 16:15:40.191 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Register (fundooNotes) in 313.4423ms
+2026-03-31 16:15:40.195 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 16:15:40.197 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/register - 500 null text/plain; charset=utf-8 339.2799ms
+2026-03-31 16:17:29.826 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/register - null null
+2026-03-31 16:17:29.841 +05:30 [INF] CORS policy execution successful.
+2026-03-31 16:17:29.843 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/register - 204 null null 18.215ms
+2026-03-31 16:17:29.847 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/register - application/json 55
+2026-03-31 16:17:29.860 +05:30 [INF] CORS policy execution successful.
+2026-03-31 16:17:29.862 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 16:17:29.864 +05:30 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(fundooNotes.DTOs.Auth.RegisterDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 16:17:29.869 +05:30 [INF] Register API called for Email: 
+2026-03-31 16:17:29.877 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 16:17:29.948 +05:30 [ERR] Error occurred during registration for Email: 
+System.Exception: User already exists
+   at fundooNotes.Services.Implementations.UserService.Register(RegisterDTO registerDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Services\Implementations\UserService.cs:line 26
+   at fundooNotes.Controllers.UserController.Register(RegisterDTO registerDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Controllers\UserController.cs:line 29
+2026-03-31 16:17:29.953 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-31 16:17:29.956 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Register (fundooNotes) in 86.9842ms
+2026-03-31 16:17:29.959 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 16:17:29.962 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/register - 500 null text/plain; charset=utf-8 115.2192ms
+2026-03-31 16:21:49.161 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/register - null null
+2026-03-31 16:21:49.176 +05:30 [INF] CORS policy execution successful.
+2026-03-31 16:21:49.178 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/register - 204 null null 17.1248ms
+2026-03-31 16:21:49.181 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/register - application/json 55
+2026-03-31 16:21:49.191 +05:30 [INF] CORS policy execution successful.
+2026-03-31 16:21:49.193 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 16:21:49.195 +05:30 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(fundooNotes.DTOs.Auth.RegisterDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 16:21:49.200 +05:30 [INF] Register API called for Email: 
+2026-03-31 16:21:49.216 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 16:21:49.280 +05:30 [ERR] Error occurred during registration for Email: 
+System.Exception: User already exists
+   at fundooNotes.Services.Implementations.UserService.Register(RegisterDTO registerDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Services\Implementations\UserService.cs:line 26
+   at fundooNotes.Controllers.UserController.Register(RegisterDTO registerDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Controllers\UserController.cs:line 29
+2026-03-31 16:21:49.284 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-31 16:21:49.287 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Register (fundooNotes) in 87.863ms
+2026-03-31 16:21:49.291 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 16:21:49.293 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/register - 500 null text/plain; charset=utf-8 112.5696ms
+2026-03-31 16:21:53.544 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/register - application/json 55
+2026-03-31 16:21:53.549 +05:30 [INF] CORS policy execution successful.
+2026-03-31 16:21:53.551 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 16:21:53.553 +05:30 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(fundooNotes.DTOs.Auth.RegisterDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 16:21:53.568 +05:30 [INF] Register API called for Email: 
+2026-03-31 16:21:53.571 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 16:21:53.629 +05:30 [ERR] Error occurred during registration for Email: 
+System.Exception: User already exists
+   at fundooNotes.Services.Implementations.UserService.Register(RegisterDTO registerDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Services\Implementations\UserService.cs:line 26
+   at fundooNotes.Controllers.UserController.Register(RegisterDTO registerDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Controllers\UserController.cs:line 29
+2026-03-31 16:21:53.634 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-31 16:21:53.638 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Register (fundooNotes) in 71.1091ms
+2026-03-31 16:21:53.641 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 16:21:53.645 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/register - 500 null text/plain; charset=utf-8 101.3401ms
+2026-03-31 16:22:01.060 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/register - null null
+2026-03-31 16:22:01.065 +05:30 [INF] CORS policy execution successful.
+2026-03-31 16:22:01.067 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/register - 204 null null 7.8737ms
+2026-03-31 16:22:01.071 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/register - application/json 55
+2026-03-31 16:22:01.082 +05:30 [INF] CORS policy execution successful.
+2026-03-31 16:22:01.085 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 16:22:01.087 +05:30 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(fundooNotes.DTOs.Auth.RegisterDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 16:22:01.093 +05:30 [INF] Register API called for Email: 
+2026-03-31 16:22:01.097 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 16:22:01.162 +05:30 [ERR] Error occurred during registration for Email: 
+System.Exception: User already exists
+   at fundooNotes.Services.Implementations.UserService.Register(RegisterDTO registerDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Services\Implementations\UserService.cs:line 26
+   at fundooNotes.Controllers.UserController.Register(RegisterDTO registerDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Controllers\UserController.cs:line 29
+2026-03-31 16:22:01.166 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-31 16:22:01.170 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Register (fundooNotes) in 77.601ms
+2026-03-31 16:22:01.173 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 16:22:01.176 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/register - 500 null text/plain; charset=utf-8 105.7256ms
+2026-03-31 16:22:31.968 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/register - null null
+2026-03-31 16:22:31.975 +05:30 [INF] CORS policy execution successful.
+2026-03-31 16:22:31.977 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/register - 204 null null 8.8386ms
+2026-03-31 16:22:31.980 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/register - application/json 93
+2026-03-31 16:22:31.990 +05:30 [INF] CORS policy execution successful.
+2026-03-31 16:22:31.992 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 16:22:31.994 +05:30 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(fundooNotes.DTOs.Auth.RegisterDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 16:22:31.997 +05:30 [INF] Register API called for Email: firstlast@gmail.com
+2026-03-31 16:22:32.002 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 16:22:32.010 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedAt], [Email], [FirstName], [LastModifiedAt], [LastName], [Password], [ResetToken])
+OUTPUT INSERTED.[UserId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-03-31 16:22:32.014 +05:30 [INF] User registered successfully: firstlast@gmail.com
+2026-03-31 16:22:32.016 +05:30 [INF] Executing OkObjectResult, writing value of type 'fundooNotes.Models.User'.
+2026-03-31 16:22:32.020 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Register (fundooNotes) in 22.9304ms
+2026-03-31 16:22:32.024 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 16:22:32.027 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/register - 200 null application/json; charset=utf-8 46.9256ms
+2026-03-31 16:22:50.222 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/login - null null
+2026-03-31 16:22:50.228 +05:30 [INF] CORS policy execution successful.
+2026-03-31 16:22:50.230 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/login - 204 null null 8.2877ms
+2026-03-31 16:22:50.237 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/login - application/json 55
+2026-03-31 16:22:50.246 +05:30 [INF] CORS policy execution successful.
+2026-03-31 16:22:50.248 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 16:22:50.251 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(fundooNotes.DTOs.Auth.LoginDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 16:22:50.256 +05:30 [INF] Login API called for Email: firstlast@gmail.com
+2026-03-31 16:22:50.263 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 16:22:50.274 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [UserSessions] ([IsActive], [LoginTime], [LogoutTime], [Token], [UserId])
+OUTPUT INSERTED.[SessionId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-03-31 16:22:50.280 +05:30 [INF] User logged in successfully: firstlast@gmail.com
+2026-03-31 16:22:50.283 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-31 16:22:50.287 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Login (fundooNotes) in 31.5206ms
+2026-03-31 16:22:50.296 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 16:22:50.304 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/login - 200 null application/json; charset=utf-8 67.9962ms
+2026-03-31 22:33:38.070 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/login - null null
+2026-03-31 22:33:38.080 +05:30 [INF] CORS policy execution successful.
+2026-03-31 22:33:38.083 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/login - 204 null null 16.108ms
+2026-03-31 22:33:38.087 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/login - application/json 48
+2026-03-31 22:33:38.098 +05:30 [INF] CORS policy execution successful.
+2026-03-31 22:33:38.102 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 22:33:38.108 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(fundooNotes.DTOs.Auth.LoginDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 22:33:38.120 +05:30 [INF] Login API called for Email: pv@gmail.com
+2026-03-31 22:33:38.393 +05:30 [INF] Executed DbCommand (27ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 22:33:38.421 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [UserSessions] ([IsActive], [LoginTime], [LogoutTime], [Token], [UserId])
+OUTPUT INSERTED.[SessionId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-03-31 22:33:38.427 +05:30 [INF] User logged in successfully: pv@gmail.com
+2026-03-31 22:33:38.429 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-31 22:33:38.434 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Login (fundooNotes) in 320.985ms
+2026-03-31 22:33:38.437 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 22:33:38.440 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/login - 200 null application/json; charset=utf-8 352.708ms
+2026-03-31 22:39:20.940 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/login - null null
+2026-03-31 22:39:20.957 +05:30 [INF] CORS policy execution successful.
+2026-03-31 22:39:20.959 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/login - 204 null null 18.7691ms
+2026-03-31 22:39:20.967 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/login - application/json 26
+2026-03-31 22:39:20.996 +05:30 [INF] CORS policy execution successful.
+2026-03-31 22:39:21.001 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 22:39:21.004 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(fundooNotes.DTOs.Auth.LoginDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 22:39:21.009 +05:30 [INF] Login API called for Email: 
+2026-03-31 22:39:21.116 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 22:39:21.130 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [UserSessions] ([IsActive], [LoginTime], [LogoutTime], [Token], [UserId])
+OUTPUT INSERTED.[SessionId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-03-31 22:39:21.136 +05:30 [INF] User logged in successfully: 
+2026-03-31 22:39:21.138 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-31 22:39:21.141 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Login (fundooNotes) in 132.3188ms
+2026-03-31 22:39:21.146 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 22:39:21.149 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/login - 200 null application/json; charset=utf-8 182.8016ms
+2026-03-31 22:43:28.141 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/login - null null
+2026-03-31 22:43:28.176 +05:30 [INF] CORS policy execution successful.
+2026-03-31 22:43:28.181 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/login - 204 null null 40.1541ms
+2026-03-31 22:43:28.189 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/login - application/json 26
+2026-03-31 22:43:28.201 +05:30 [INF] CORS policy execution successful.
+2026-03-31 22:43:28.203 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 22:43:28.206 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(fundooNotes.DTOs.Auth.LoginDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 22:43:28.213 +05:30 [INF] Login API called for Email: 
+2026-03-31 22:43:28.388 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 22:43:28.405 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [UserSessions] ([IsActive], [LoginTime], [LogoutTime], [Token], [UserId])
+OUTPUT INSERTED.[SessionId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-03-31 22:43:28.409 +05:30 [INF] User logged in successfully: 
+2026-03-31 22:43:28.412 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-31 22:43:28.415 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Login (fundooNotes) in 202.8553ms
+2026-03-31 22:43:28.419 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 22:43:28.422 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/login - 200 null application/json; charset=utf-8 233.0916ms
+2026-03-31 22:49:11.978 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/login - null null
+2026-03-31 22:49:11.988 +05:30 [INF] CORS policy execution successful.
+2026-03-31 22:49:11.990 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/login - 204 null null 12.129ms
+2026-03-31 22:49:11.993 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/login - application/json 48
+2026-03-31 22:49:12.001 +05:30 [INF] CORS policy execution successful.
+2026-03-31 22:49:12.003 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 22:49:12.005 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(fundooNotes.DTOs.Auth.LoginDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 22:49:12.011 +05:30 [INF] Login API called for Email: pv@gmail.com
+2026-03-31 22:49:12.127 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 22:49:12.140 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [UserSessions] ([IsActive], [LoginTime], [LogoutTime], [Token], [UserId])
+OUTPUT INSERTED.[SessionId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-03-31 22:49:12.145 +05:30 [INF] User logged in successfully: pv@gmail.com
+2026-03-31 22:49:12.147 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-31 22:49:12.149 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Login (fundooNotes) in 139.2663ms
+2026-03-31 22:49:12.153 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 22:49:12.155 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/login - 200 null application/json; charset=utf-8 162.3401ms
+2026-03-31 22:53:17.197 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-31 22:53:17.804 +05:30 [INF] Now listening on: https://localhost:7119
+2026-03-31 22:53:17.807 +05:30 [INF] Now listening on: http://localhost:5004
+2026-03-31 22:53:17.942 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-31 22:53:17.946 +05:30 [INF] Hosting environment: Development
+2026-03-31 22:53:17.980 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes
+2026-03-31 22:53:18.550 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - null null
+2026-03-31 22:53:18.949 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - 200 null text/html;charset=utf-8 407.1855ms
+2026-03-31 22:53:19.023 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - null null
+2026-03-31 22:53:19.023 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-31 22:53:19.071 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 48.3856ms
+2026-03-31 22:53:19.128 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - 200 null text/javascript; charset=UTF-8 106.8806ms
+2026-03-31 22:53:19.199 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - null null
+2026-03-31 22:53:19.253 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 54.4417ms
+2026-03-31 22:54:14.009 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/login - null null
+2026-03-31 22:54:14.033 +05:30 [INF] CORS policy execution successful.
+2026-03-31 22:54:14.038 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/login - 204 null null 29.6305ms
+2026-03-31 22:54:14.052 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/login - application/json 42
+2026-03-31 22:54:14.068 +05:30 [INF] CORS policy execution successful.
+2026-03-31 22:54:14.207 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 22:54:14.243 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(fundooNotes.DTOs.Auth.LoginDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 22:54:14.536 +05:30 [INF] Login API called for Email: pv@gmail.com
+2026-03-31 22:54:16.570 +05:30 [INF] Executed DbCommand (83ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 22:54:16.900 +05:30 [ERR] Error occurred during login for Email: pv@gmail.com
+System.Exception: Invalid email or password
+   at fundooNotes.Services.Implementations.UserService.Login(LoginDTO loginDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Services\Implementations\UserService.cs:line 52
+   at fundooNotes.Controllers.UserController.Login(LoginDTO loginDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Controllers\UserController.cs:line 52
+2026-03-31 22:54:16.974 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-31 22:54:16.984 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Login (fundooNotes) in 2730.9177ms
+2026-03-31 22:54:16.987 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 22:54:17.005 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/login - 500 null text/plain; charset=utf-8 2952.2625ms
+2026-03-31 23:00:48.565 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/login - null null
+2026-03-31 23:00:48.589 +05:30 [INF] CORS policy execution successful.
+2026-03-31 23:00:48.592 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/login - 204 null null 28.2992ms
+2026-03-31 23:00:48.596 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/login - application/json 41
+2026-03-31 23:00:48.606 +05:30 [INF] CORS policy execution successful.
+2026-03-31 23:00:48.609 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 23:00:48.611 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(fundooNotes.DTOs.Auth.LoginDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 23:00:48.617 +05:30 [INF] Login API called for Email: pv@gmail.com
+2026-03-31 23:00:48.734 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 23:00:48.802 +05:30 [ERR] Error occurred during login for Email: pv@gmail.com
+System.Exception: Invalid email or password
+   at fundooNotes.Services.Implementations.UserService.Login(LoginDTO loginDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Services\Implementations\UserService.cs:line 52
+   at fundooNotes.Controllers.UserController.Login(LoginDTO loginDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Controllers\UserController.cs:line 52
+2026-03-31 23:00:48.807 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-31 23:00:48.810 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Login (fundooNotes) in 195.4389ms
+2026-03-31 23:00:48.816 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 23:00:48.826 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/login - 500 null text/plain; charset=utf-8 230.1887ms
+2026-03-31 23:03:47.771 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/login - null null
+2026-03-31 23:03:47.789 +05:30 [INF] CORS policy execution successful.
+2026-03-31 23:03:47.792 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/login - 204 null null 21.0191ms
+2026-03-31 23:03:47.797 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/login - application/json 48
+2026-03-31 23:03:47.808 +05:30 [INF] CORS policy execution successful.
+2026-03-31 23:03:47.811 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 23:03:47.814 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(fundooNotes.DTOs.Auth.LoginDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 23:03:47.822 +05:30 [INF] Login API called for Email: pv@gmail.com
+2026-03-31 23:03:47.911 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 23:03:48.134 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [UserSessions] ([IsActive], [LoginTime], [LogoutTime], [Token], [UserId])
+OUTPUT INSERTED.[SessionId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-03-31 23:03:48.160 +05:30 [INF] User logged in successfully: pv@gmail.com
+2026-03-31 23:03:48.163 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-31 23:03:48.170 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Login (fundooNotes) in 352.2789ms
+2026-03-31 23:03:48.174 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 23:03:48.177 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/login - 200 null application/json; charset=utf-8 380.2036ms
+2026-03-31 23:06:30.234 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/login - null null
+2026-03-31 23:06:30.247 +05:30 [INF] CORS policy execution successful.
+2026-03-31 23:06:30.250 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/login - 204 null null 16.1766ms
+2026-03-31 23:06:30.253 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/login - application/json 51
+2026-03-31 23:06:30.263 +05:30 [INF] CORS policy execution successful.
+2026-03-31 23:06:30.265 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 23:06:30.268 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(fundooNotes.DTOs.Auth.LoginDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 23:06:30.272 +05:30 [INF] Login API called for Email: pv@gmail.com
+2026-03-31 23:06:30.292 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 23:06:30.353 +05:30 [ERR] Error occurred during login for Email: pv@gmail.com
+System.Exception: Invalid email or password
+   at fundooNotes.Services.Implementations.UserService.Login(LoginDTO loginDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Services\Implementations\UserService.cs:line 52
+   at fundooNotes.Controllers.UserController.Login(LoginDTO loginDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Controllers\UserController.cs:line 52
+2026-03-31 23:06:30.358 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-31 23:06:30.362 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Login (fundooNotes) in 90.6312ms
+2026-03-31 23:06:30.366 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 23:06:30.369 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/login - 500 null text/plain; charset=utf-8 116.392ms
+2026-03-31 23:06:36.737 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/login - null null
+2026-03-31 23:06:36.743 +05:30 [INF] CORS policy execution successful.
+2026-03-31 23:06:36.745 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/login - 204 null null 8.1009ms
+2026-03-31 23:06:36.748 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/login - application/json 48
+2026-03-31 23:06:36.757 +05:30 [INF] CORS policy execution successful.
+2026-03-31 23:06:36.759 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 23:06:36.761 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(fundooNotes.DTOs.Auth.LoginDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 23:06:36.767 +05:30 [INF] Login API called for Email: pv@gmail.com
+2026-03-31 23:06:36.770 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 23:06:36.786 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [UserSessions] ([IsActive], [LoginTime], [LogoutTime], [Token], [UserId])
+OUTPUT INSERTED.[SessionId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-03-31 23:06:36.791 +05:30 [INF] User logged in successfully: pv@gmail.com
+2026-03-31 23:06:36.793 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-31 23:06:36.795 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Login (fundooNotes) in 29.311ms
+2026-03-31 23:06:36.800 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 23:06:36.804 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/login - 200 null application/json; charset=utf-8 55.6786ms
+2026-03-31 23:11:59.841 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/register - null null
+2026-03-31 23:11:59.856 +05:30 [INF] CORS policy execution successful.
+2026-03-31 23:11:59.858 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/register - 204 null null 20.4174ms
+2026-03-31 23:11:59.862 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/register - application/json 55
+2026-03-31 23:11:59.873 +05:30 [INF] CORS policy execution successful.
+2026-03-31 23:11:59.874 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 23:11:59.880 +05:30 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(fundooNotes.DTOs.Auth.RegisterDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 23:11:59.888 +05:30 [INF] Register API called for Email: 
+2026-03-31 23:11:59.997 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 23:12:00.084 +05:30 [ERR] Error occurred during registration for Email: 
+System.Exception: User already exists
+   at fundooNotes.Services.Implementations.UserService.Register(RegisterDTO registerDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Services\Implementations\UserService.cs:line 26
+   at fundooNotes.Controllers.UserController.Register(RegisterDTO registerDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Controllers\UserController.cs:line 29
+2026-03-31 23:12:00.089 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-31 23:12:00.093 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Register (fundooNotes) in 209.0957ms
+2026-03-31 23:12:00.097 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 23:12:00.100 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/register - 500 null text/plain; charset=utf-8 238.5744ms
+2026-03-31 23:12:03.616 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/register - application/json 55
+2026-03-31 23:12:03.622 +05:30 [INF] CORS policy execution successful.
+2026-03-31 23:12:03.624 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 23:12:03.627 +05:30 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(fundooNotes.DTOs.Auth.RegisterDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 23:12:03.633 +05:30 [INF] Register API called for Email: 
+2026-03-31 23:12:03.639 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 23:12:03.696 +05:30 [ERR] Error occurred during registration for Email: 
+System.Exception: User already exists
+   at fundooNotes.Services.Implementations.UserService.Register(RegisterDTO registerDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Services\Implementations\UserService.cs:line 26
+   at fundooNotes.Controllers.UserController.Register(RegisterDTO registerDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Controllers\UserController.cs:line 29
+2026-03-31 23:12:03.700 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-31 23:12:03.702 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Register (fundooNotes) in 70.3937ms
+2026-03-31 23:12:03.705 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 23:12:03.707 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/register - 500 null text/plain; charset=utf-8 91.6006ms
+2026-03-31 23:25:19.430 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/register - null null
+2026-03-31 23:25:19.447 +05:30 [INF] CORS policy execution successful.
+2026-03-31 23:25:19.449 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/register - 204 null null 24.0959ms
+2026-03-31 23:25:19.453 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/register - application/json 55
+2026-03-31 23:25:19.462 +05:30 [INF] CORS policy execution successful.
+2026-03-31 23:25:19.465 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 23:25:19.468 +05:30 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(fundooNotes.DTOs.Auth.RegisterDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 23:25:19.472 +05:30 [INF] Register API called for Email: 
+2026-03-31 23:25:19.605 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 23:25:19.676 +05:30 [ERR] Error occurred during registration for Email: 
+System.Exception: User already exists
+   at fundooNotes.Services.Implementations.UserService.Register(RegisterDTO registerDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Services\Implementations\UserService.cs:line 26
+   at fundooNotes.Controllers.UserController.Register(RegisterDTO registerDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Controllers\UserController.cs:line 29
+2026-03-31 23:25:19.681 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-31 23:25:19.684 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Register (fundooNotes) in 213.1448ms
+2026-03-31 23:25:19.688 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 23:25:19.690 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/register - 500 null text/plain; charset=utf-8 237.4718ms
+2026-03-31 23:25:36.262 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/register - null null
+2026-03-31 23:25:36.267 +05:30 [INF] CORS policy execution successful.
+2026-03-31 23:25:36.269 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/register - 204 null null 8.4034ms
+2026-03-31 23:25:36.273 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/register - application/json 90
+2026-03-31 23:25:36.282 +05:30 [INF] CORS policy execution successful.
+2026-03-31 23:25:36.284 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 23:25:36.286 +05:30 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(fundooNotes.DTOs.Auth.RegisterDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 23:25:36.290 +05:30 [INF] Register API called for Email: rv@gmail.com
+2026-03-31 23:25:36.294 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 23:25:36.320 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedAt], [Email], [FirstName], [LastModifiedAt], [LastName], [Password], [ResetToken])
+OUTPUT INSERTED.[UserId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-03-31 23:25:36.331 +05:30 [INF] User registered successfully: rv@gmail.com
+2026-03-31 23:25:36.334 +05:30 [INF] Executing OkObjectResult, writing value of type 'fundooNotes.Models.User'.
+2026-03-31 23:25:36.365 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Register (fundooNotes) in 76.1434ms
+2026-03-31 23:25:36.370 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 23:25:36.372 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/register - 200 null application/json; charset=utf-8 98.7784ms
+2026-03-31 23:29:02.994 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/register - null null
+2026-03-31 23:29:03.008 +05:30 [INF] CORS policy execution successful.
+2026-03-31 23:29:03.010 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/register - 204 null null 16.276ms
+2026-03-31 23:29:03.018 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/register - application/json 55
+2026-03-31 23:29:03.032 +05:30 [INF] CORS policy execution successful.
+2026-03-31 23:29:03.034 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 23:29:03.036 +05:30 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(fundooNotes.DTOs.Auth.RegisterDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 23:29:03.043 +05:30 [INF] Register API called for Email: 
+2026-03-31 23:29:03.060 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 23:29:03.129 +05:30 [ERR] Error occurred during registration for Email: 
+System.Exception: User already exists
+   at fundooNotes.Services.Implementations.UserService.Register(RegisterDTO registerDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Services\Implementations\UserService.cs:line 26
+   at fundooNotes.Controllers.UserController.Register(RegisterDTO registerDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Controllers\UserController.cs:line 29
+2026-03-31 23:29:03.133 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-31 23:29:03.137 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Register (fundooNotes) in 94.967ms
+2026-03-31 23:29:03.142 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 23:29:03.152 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/register - 500 null text/plain; charset=utf-8 134.736ms
+2026-03-31 23:29:10.623 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/register - null null
+2026-03-31 23:29:10.631 +05:30 [INF] CORS policy execution successful.
+2026-03-31 23:29:10.633 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/register - 204 null null 10.5272ms
+2026-03-31 23:29:10.637 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/register - application/json 55
+2026-03-31 23:29:10.648 +05:30 [INF] CORS policy execution successful.
+2026-03-31 23:29:10.650 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 23:29:10.651 +05:30 [INF] Route matched with {action = "Register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(fundooNotes.DTOs.Auth.RegisterDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 23:29:10.656 +05:30 [INF] Register API called for Email: 
+2026-03-31 23:29:10.661 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 23:29:10.720 +05:30 [ERR] Error occurred during registration for Email: 
+System.Exception: User already exists
+   at fundooNotes.Services.Implementations.UserService.Register(RegisterDTO registerDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Services\Implementations\UserService.cs:line 26
+   at fundooNotes.Controllers.UserController.Register(RegisterDTO registerDTO) in E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes\Controllers\UserController.cs:line 29
+2026-03-31 23:29:10.724 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2026-03-31 23:29:10.727 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Register (fundooNotes) in 72.3142ms
+2026-03-31 23:29:10.731 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Register (fundooNotes)'
+2026-03-31 23:29:10.733 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/register - 500 null text/plain; charset=utf-8 96.8694ms
+2026-03-31 23:29:40.645 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/login - null null
+2026-03-31 23:29:40.663 +05:30 [INF] CORS policy execution successful.
+2026-03-31 23:29:40.665 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/login - 204 null null 20.7579ms
+2026-03-31 23:29:40.669 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/login - application/json 48
+2026-03-31 23:29:40.678 +05:30 [INF] CORS policy execution successful.
+2026-03-31 23:29:40.679 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 23:29:40.681 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(fundooNotes.DTOs.Auth.LoginDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-03-31 23:29:40.686 +05:30 [INF] Login API called for Email: rv@gmail.com
+2026-03-31 23:29:40.694 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-03-31 23:29:40.709 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [UserSessions] ([IsActive], [LoginTime], [LogoutTime], [Token], [UserId])
+OUTPUT INSERTED.[SessionId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-03-31 23:29:40.714 +05:30 [INF] User logged in successfully: rv@gmail.com
+2026-03-31 23:29:40.717 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-31 23:29:40.721 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Login (fundooNotes) in 36.2788ms
+2026-03-31 23:29:40.725 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-03-31 23:29:40.728 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/login - 200 null application/json; charset=utf-8 59.1257ms

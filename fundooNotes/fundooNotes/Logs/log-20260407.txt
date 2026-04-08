@@ -1,0 +1,667 @@
+2026-04-07 15:38:05.198 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-07 15:38:05.707 +05:30 [INF] Now listening on: https://localhost:7119
+2026-04-07 15:38:05.709 +05:30 [INF] Now listening on: http://localhost:5004
+2026-04-07 15:38:05.813 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-07 15:38:05.818 +05:30 [INF] Hosting environment: Development
+2026-04-07 15:38:05.823 +05:30 [INF] Content root path: E:\BL_Training\ASP.NET Core Web API\fundooNotes\fundooNotes
+2026-04-07 15:38:10.150 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/index.html - null null
+2026-04-07 15:38:10.638 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/index.html - 200 null text/html;charset=utf-8 499.7445ms
+2026-04-07 15:38:10.720 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-07 15:38:10.721 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - null null
+2026-04-07 15:38:10.770 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - 200 16507 application/javascript; charset=utf-8 51.5151ms
+2026-04-07 15:38:10.916 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - 200 null text/javascript; charset=UTF-8 198.4965ms
+2026-04-07 15:38:10.987 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - null null
+2026-04-07 15:38:11.051 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 64.0377ms
+2026-04-07 15:39:02.516 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/user/login - null null
+2026-04-07 15:39:02.532 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:39:02.537 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/user/login - 204 null null 20.8771ms
+2026-04-07 15:39:02.555 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/user/login - application/json 48
+2026-04-07 15:39:02.569 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:39:04.316 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-04-07 15:39:04.346 +05:30 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(fundooNotes.DTOs.Auth.LoginDTO) on controller fundooNotes.Controllers.UserController (fundooNotes).
+2026-04-07 15:39:04.992 +05:30 [INF] Login API called for Email: pv@gmail.com
+2026-04-07 15:39:08.530 +05:30 [INF] Executed DbCommand (131ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastModifiedAt], [u].[LastName], [u].[Password], [u].[ResetToken]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2026-04-07 15:39:08.915 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [UserSessions] ([IsActive], [LoginTime], [LogoutTime], [Token], [UserId])
+OUTPUT INSERTED.[SessionId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-04-07 15:39:08.944 +05:30 [INF] User logged in successfully: pv@gmail.com
+2026-04-07 15:39:08.957 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 15:39:08.980 +05:30 [INF] Executed action fundooNotes.Controllers.UserController.Login (fundooNotes) in 4618.3585ms
+2026-04-07 15:39:08.983 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.UserController.Login (fundooNotes)'
+2026-04-07 15:39:09.000 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/user/login - 200 null application/json; charset=utf-8 6445.8904ms
+2026-04-07 15:39:10.955 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes - null null
+2026-04-07 15:39:10.963 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:39:10.966 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes - 204 null null 12.0199ms
+2026-04-07 15:39:10.994 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes - null null
+2026-04-07 15:39:11.005 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:39:11.092 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:39:11.107 +05:30 [INF] Route matched with {action = "GetAllNotes", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:39:11.741 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE ([n].[UserId] = @__userId_0 OR EXISTS (
+    SELECT 1
+    FROM [Collaborators] AS [c]
+    WHERE [c].[UserId] = @__userId_0)) AND [n].[IsTrash] = CAST(0 AS bit) AND [n].[IsArchived] = CAST(0 AS bit)
+2026-04-07 15:39:11.825 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:39:11.831 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes) in 718.5179ms
+2026-04-07 15:39:11.834 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:39:11.838 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes - 200 null application/json; charset=utf-8 844.3883ms
+2026-04-07 15:40:11.852 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes - null null
+2026-04-07 15:40:11.862 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:11.865 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes - 204 null null 13.5976ms
+2026-04-07 15:40:11.870 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7119/api/notes - application/json 41
+2026-04-07 15:40:11.880 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:11.889 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.CreateNote (fundooNotes)'
+2026-04-07 15:40:11.899 +05:30 [INF] Route matched with {action = "CreateNote", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateNote(fundooNotes.DTOs.Notes.CreateNoteDTO) on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:40:12.183 +05:30 [INF] Executed DbCommand (154ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime2), @p8='?' (DbType = DateTime2), @p9='?' (Size = 4000), @p10='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Notes] ([Colour], [CreatedDate], [Description], [Image], [IsArchived], [IsPin], [IsTrash], [LastModifiedAt], [Reminder], [Title], [UserId])
+OUTPUT INSERTED.[NoteId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2026-04-07 15:40:12.217 +05:30 [INF] Executing OkObjectResult, writing value of type 'fundooNotes.DTOs.Notes.NoteResponseDTO'.
+2026-04-07 15:40:12.220 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.CreateNote (fundooNotes) in 317.2551ms
+2026-04-07 15:40:12.224 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.CreateNote (fundooNotes)'
+2026-04-07 15:40:12.227 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7119/api/notes - 200 null application/json; charset=utf-8 357.7555ms
+2026-04-07 15:40:12.234 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes - null null
+2026-04-07 15:40:12.241 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:12.245 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:40:12.248 +05:30 [INF] Route matched with {action = "GetAllNotes", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:40:12.294 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE ([n].[UserId] = @__userId_0 OR EXISTS (
+    SELECT 1
+    FROM [Collaborators] AS [c]
+    WHERE [c].[UserId] = @__userId_0)) AND [n].[IsTrash] = CAST(0 AS bit) AND [n].[IsArchived] = CAST(0 AS bit)
+2026-04-07 15:40:12.300 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:40:12.304 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes) in 52.4723ms
+2026-04-07 15:40:12.308 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:40:12.311 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes - 200 null application/json; charset=utf-8 77.4448ms
+2026-04-07 15:40:19.589 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes/color/1012 - null null
+2026-04-07 15:40:19.598 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:19.600 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes/color/1012 - 204 null null 11.073ms
+2026-04-07 15:40:19.604 +05:30 [INF] Request starting HTTP/2 PATCH https://localhost:7119/api/notes/color/1012 - application/json 19
+2026-04-07 15:40:19.619 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:19.622 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.ChangeColor (fundooNotes)'
+2026-04-07 15:40:19.632 +05:30 [INF] Route matched with {action = "ChangeColor", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ChangeColor(Int32, fundooNotes.DTOs.Notes.ChangeColorDTO) on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:40:19.659 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__noteId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[NoteId] = @__noteId_0 AND [n].[UserId] = @__userId_1
+2026-04-07 15:40:19.700 +05:30 [INF] Executed DbCommand (27ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Notes] SET [Colour] = @p0
+OUTPUT 1
+WHERE [NoteId] = @p1;
+2026-04-07 15:40:19.707 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 15:40:19.712 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.ChangeColor (fundooNotes) in 76.0578ms
+2026-04-07 15:40:19.717 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.ChangeColor (fundooNotes)'
+2026-04-07 15:40:19.719 +05:30 [INF] Request finished HTTP/2 PATCH https://localhost:7119/api/notes/color/1012 - 200 null application/json; charset=utf-8 115.7526ms
+2026-04-07 15:40:27.618 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes/reminder/1012 - null null
+2026-04-07 15:40:27.625 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:27.628 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes/reminder/1012 - 204 null null 10.0467ms
+2026-04-07 15:40:27.631 +05:30 [INF] Request starting HTTP/2 PATCH https://localhost:7119/api/notes/reminder/1012 - application/json 39
+2026-04-07 15:40:27.640 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:27.642 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.SetReminder (fundooNotes)'
+2026-04-07 15:40:27.650 +05:30 [INF] Route matched with {action = "SetReminder", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SetReminder(Int32, fundooNotes.DTOs.Notes.SetReminderDTO) on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:40:27.668 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__noteId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[NoteId] = @__noteId_0 AND [n].[UserId] = @__userId_1
+2026-04-07 15:40:27.691 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Notes] SET [Reminder] = @p0
+OUTPUT 1
+WHERE [NoteId] = @p1;
+2026-04-07 15:40:27.701 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 15:40:27.704 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.SetReminder (fundooNotes) in 50.1157ms
+2026-04-07 15:40:27.708 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.SetReminder (fundooNotes)'
+2026-04-07 15:40:27.711 +05:30 [INF] Request finished HTTP/2 PATCH https://localhost:7119/api/notes/reminder/1012 - 200 null application/json; charset=utf-8 80.0689ms
+2026-04-07 15:40:36.299 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes/pin/1012 - null null
+2026-04-07 15:40:36.304 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:36.305 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes/pin/1012 - 204 null null 7.0861ms
+2026-04-07 15:40:36.309 +05:30 [INF] Request starting HTTP/2 PATCH https://localhost:7119/api/notes/pin/1012 - application/json 2
+2026-04-07 15:40:36.318 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:36.320 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.TogglePin (fundooNotes)'
+2026-04-07 15:40:36.329 +05:30 [INF] Route matched with {action = "TogglePin", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TogglePin(Int32) on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:40:36.342 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__noteId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[NoteId] = @__noteId_0 AND [n].[UserId] = @__userId_1
+2026-04-07 15:40:36.365 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Notes] SET [IsPin] = @p0
+OUTPUT 1
+WHERE [NoteId] = @p1;
+2026-04-07 15:40:36.371 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 15:40:36.378 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.TogglePin (fundooNotes) in 45.3125ms
+2026-04-07 15:40:36.384 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.TogglePin (fundooNotes)'
+2026-04-07 15:40:36.387 +05:30 [INF] Request finished HTTP/2 PATCH https://localhost:7119/api/notes/pin/1012 - 200 null application/json; charset=utf-8 78.2331ms
+2026-04-07 15:40:36.396 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes - null null
+2026-04-07 15:40:36.407 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:36.411 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes - 204 null null 16.0751ms
+2026-04-07 15:40:36.415 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes - null null
+2026-04-07 15:40:36.424 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:36.428 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:40:36.430 +05:30 [INF] Route matched with {action = "GetAllNotes", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:40:36.440 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE ([n].[UserId] = @__userId_0 OR EXISTS (
+    SELECT 1
+    FROM [Collaborators] AS [c]
+    WHERE [c].[UserId] = @__userId_0)) AND [n].[IsTrash] = CAST(0 AS bit) AND [n].[IsArchived] = CAST(0 AS bit)
+2026-04-07 15:40:36.448 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:40:36.451 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes) in 16.8743ms
+2026-04-07 15:40:36.454 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:40:36.457 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes - 200 null application/json; charset=utf-8 42.0976ms
+2026-04-07 15:40:39.996 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes/pin/1 - null null
+2026-04-07 15:40:40.001 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:40.004 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes/pin/1 - 204 null null 7.8188ms
+2026-04-07 15:40:40.019 +05:30 [INF] Request starting HTTP/2 PATCH https://localhost:7119/api/notes/pin/1 - application/json 2
+2026-04-07 15:40:40.028 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:40.030 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.TogglePin (fundooNotes)'
+2026-04-07 15:40:40.034 +05:30 [INF] Route matched with {action = "TogglePin", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TogglePin(Int32) on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:40:40.066 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__noteId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[NoteId] = @__noteId_0 AND [n].[UserId] = @__userId_1
+2026-04-07 15:40:40.076 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Notes] SET [IsPin] = @p0
+OUTPUT 1
+WHERE [NoteId] = @p1;
+2026-04-07 15:40:40.081 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 15:40:40.084 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.TogglePin (fundooNotes) in 45.7316ms
+2026-04-07 15:40:40.088 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.TogglePin (fundooNotes)'
+2026-04-07 15:40:40.090 +05:30 [INF] Request finished HTTP/2 PATCH https://localhost:7119/api/notes/pin/1 - 200 null application/json; charset=utf-8 71.2801ms
+2026-04-07 15:40:40.097 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes - null null
+2026-04-07 15:40:40.105 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:40.107 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:40:40.110 +05:30 [INF] Route matched with {action = "GetAllNotes", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:40:40.130 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE ([n].[UserId] = @__userId_0 OR EXISTS (
+    SELECT 1
+    FROM [Collaborators] AS [c]
+    WHERE [c].[UserId] = @__userId_0)) AND [n].[IsTrash] = CAST(0 AS bit) AND [n].[IsArchived] = CAST(0 AS bit)
+2026-04-07 15:40:40.137 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:40:40.140 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes) in 25.8697ms
+2026-04-07 15:40:40.144 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:40:40.147 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes - 200 null application/json; charset=utf-8 50.7328ms
+2026-04-07 15:40:44.010 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes/archive/1012 - null null
+2026-04-07 15:40:44.015 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:44.017 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes/archive/1012 - 204 null null 7.1094ms
+2026-04-07 15:40:44.020 +05:30 [INF] Request starting HTTP/2 PATCH https://localhost:7119/api/notes/archive/1012 - application/json 2
+2026-04-07 15:40:44.032 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:44.034 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.ToggleArchive (fundooNotes)'
+2026-04-07 15:40:44.039 +05:30 [INF] Route matched with {action = "ToggleArchive", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ToggleArchive(Int32) on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:40:44.080 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[@__noteId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[NoteId] = @__noteId_0 AND [n].[UserId] = @__userId_1
+2026-04-07 15:40:44.093 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Notes] SET [IsArchived] = @p0
+OUTPUT 1
+WHERE [NoteId] = @p1;
+2026-04-07 15:40:44.100 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 15:40:44.104 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.ToggleArchive (fundooNotes) in 58.2413ms
+2026-04-07 15:40:44.108 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.ToggleArchive (fundooNotes)'
+2026-04-07 15:40:44.111 +05:30 [INF] Request finished HTTP/2 PATCH https://localhost:7119/api/notes/archive/1012 - 200 null application/json; charset=utf-8 91.6273ms
+2026-04-07 15:40:44.118 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes - null null
+2026-04-07 15:40:44.130 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:44.132 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes - 204 null null 14.0917ms
+2026-04-07 15:40:44.135 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes - null null
+2026-04-07 15:40:44.148 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:44.151 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:40:44.154 +05:30 [INF] Route matched with {action = "GetAllNotes", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:40:44.180 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE ([n].[UserId] = @__userId_0 OR EXISTS (
+    SELECT 1
+    FROM [Collaborators] AS [c]
+    WHERE [c].[UserId] = @__userId_0)) AND [n].[IsTrash] = CAST(0 AS bit) AND [n].[IsArchived] = CAST(0 AS bit)
+2026-04-07 15:40:44.189 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:40:44.193 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes) in 32.1343ms
+2026-04-07 15:40:44.196 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:40:44.199 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes - 200 null application/json; charset=utf-8 64.1308ms
+2026-04-07 15:40:48.231 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes/3 - null null
+2026-04-07 15:40:48.237 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:48.240 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes/3 - 204 null null 9.506ms
+2026-04-07 15:40:48.244 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7119/api/notes/3 - null null
+2026-04-07 15:40:48.257 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:48.260 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.DeleteNote (fundooNotes)'
+2026-04-07 15:40:48.267 +05:30 [INF] Route matched with {action = "DeleteNote", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteNote(Int32) on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:40:48.277 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__noteId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[NoteId] = @__noteId_0 AND [n].[UserId] = @__userId_1
+2026-04-07 15:40:48.316 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[@__note_NoteId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[NoteId] = @__note_NoteId_0 AND ([n].[UserId] = @__userId_1 OR EXISTS (
+    SELECT 1
+    FROM [Collaborators] AS [c]
+    WHERE [c].[NoteId] = [n].[NoteId] AND [c].[UserId] = @__userId_1))
+2026-04-07 15:40:48.327 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Notes] SET [IsTrash] = @p0, [LastModifiedAt] = @p1
+OUTPUT 1
+WHERE [NoteId] = @p2;
+2026-04-07 15:40:48.336 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 15:40:48.339 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.DeleteNote (fundooNotes) in 67.8141ms
+2026-04-07 15:40:48.342 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.DeleteNote (fundooNotes)'
+2026-04-07 15:40:48.344 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7119/api/notes/3 - 200 null application/json; charset=utf-8 100.0212ms
+2026-04-07 15:40:48.350 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes - null null
+2026-04-07 15:40:48.356 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:48.359 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:40:48.361 +05:30 [INF] Route matched with {action = "GetAllNotes", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:40:48.369 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE ([n].[UserId] = @__userId_0 OR EXISTS (
+    SELECT 1
+    FROM [Collaborators] AS [c]
+    WHERE [c].[UserId] = @__userId_0)) AND [n].[IsTrash] = CAST(0 AS bit) AND [n].[IsArchived] = CAST(0 AS bit)
+2026-04-07 15:40:48.376 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:40:48.379 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes) in 14.7814ms
+2026-04-07 15:40:48.382 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:40:48.385 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes - 200 null application/json; charset=utf-8 34.8484ms
+2026-04-07 15:40:50.046 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes/archive - null null
+2026-04-07 15:40:50.053 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:50.055 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes/archive - 204 null null 9.2678ms
+2026-04-07 15:40:50.062 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes/archive - null null
+2026-04-07 15:40:50.076 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:50.078 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes)'
+2026-04-07 15:40:50.082 +05:30 [INF] Route matched with {action = "GetArchiveNotes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArchiveNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:40:50.099 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[UserId] = @__userId_0 AND [n].[IsArchived] = CAST(1 AS bit)
+2026-04-07 15:40:50.103 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:40:50.106 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes) in 20.1094ms
+2026-04-07 15:40:50.112 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes)'
+2026-04-07 15:40:50.114 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes/archive - 200 null application/json; charset=utf-8 52.7975ms
+2026-04-07 15:40:54.340 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes/trash - null null
+2026-04-07 15:40:54.350 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:54.353 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes/trash - 204 null null 12.8552ms
+2026-04-07 15:40:54.360 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes/trash - null null
+2026-04-07 15:40:54.370 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:54.375 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetTrashNotes (fundooNotes)'
+2026-04-07 15:40:54.379 +05:30 [INF] Route matched with {action = "GetTrashNotes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetTrashNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:40:54.398 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[UserId] = @__userId_0 AND [n].[IsTrash] = CAST(1 AS bit)
+2026-04-07 15:40:54.403 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:40:54.410 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetTrashNotes (fundooNotes) in 26.1361ms
+2026-04-07 15:40:54.415 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetTrashNotes (fundooNotes)'
+2026-04-07 15:40:54.418 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes/trash - 200 null application/json; charset=utf-8 58.4248ms
+2026-04-07 15:40:59.489 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes/restore/3 - null null
+2026-04-07 15:40:59.495 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:59.497 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes/restore/3 - 204 null null 8.6642ms
+2026-04-07 15:40:59.502 +05:30 [INF] Request starting HTTP/2 PATCH https://localhost:7119/api/notes/restore/3 - application/json 2
+2026-04-07 15:40:59.514 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:59.517 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.RestoreNote (fundooNotes)'
+2026-04-07 15:40:59.525 +05:30 [INF] Route matched with {action = "RestoreNote", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RestoreNote(Int32) on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:40:59.547 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__noteId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[NoteId] = @__noteId_0 AND [n].[UserId] = @__userId_1 AND [n].[IsTrash] = CAST(1 AS bit)
+2026-04-07 15:40:59.558 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Notes] SET [IsTrash] = @p0
+OUTPUT 1
+WHERE [NoteId] = @p1;
+2026-04-07 15:40:59.563 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 15:40:59.566 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.RestoreNote (fundooNotes) in 37.2403ms
+2026-04-07 15:40:59.570 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.RestoreNote (fundooNotes)'
+2026-04-07 15:40:59.574 +05:30 [INF] Request finished HTTP/2 PATCH https://localhost:7119/api/notes/restore/3 - 200 null application/json; charset=utf-8 72.435ms
+2026-04-07 15:40:59.581 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes/trash - null null
+2026-04-07 15:40:59.592 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:59.594 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes/trash - 204 null null 13.8387ms
+2026-04-07 15:40:59.598 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes/trash - null null
+2026-04-07 15:40:59.612 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:40:59.614 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetTrashNotes (fundooNotes)'
+2026-04-07 15:40:59.617 +05:30 [INF] Route matched with {action = "GetTrashNotes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetTrashNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:40:59.625 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[UserId] = @__userId_0 AND [n].[IsTrash] = CAST(1 AS bit)
+2026-04-07 15:40:59.630 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:40:59.634 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetTrashNotes (fundooNotes) in 11.6712ms
+2026-04-07 15:40:59.637 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetTrashNotes (fundooNotes)'
+2026-04-07 15:40:59.640 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes/trash - 200 null application/json; charset=utf-8 42.1041ms
+2026-04-07 15:41:00.971 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes - null null
+2026-04-07 15:41:00.980 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:00.982 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes - 204 null null 10.4882ms
+2026-04-07 15:41:00.993 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes - null null
+2026-04-07 15:41:01.002 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:01.004 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:41:01.009 +05:30 [INF] Route matched with {action = "GetAllNotes", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:41:01.033 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE ([n].[UserId] = @__userId_0 OR EXISTS (
+    SELECT 1
+    FROM [Collaborators] AS [c]
+    WHERE [c].[UserId] = @__userId_0)) AND [n].[IsTrash] = CAST(0 AS bit) AND [n].[IsArchived] = CAST(0 AS bit)
+2026-04-07 15:41:01.040 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:41:01.044 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes) in 22.3498ms
+2026-04-07 15:41:01.047 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:41:01.050 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes - 200 null application/json; charset=utf-8 56.7928ms
+2026-04-07 15:41:02.950 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes/archive - null null
+2026-04-07 15:41:02.962 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:02.965 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes/archive - 204 null null 15.7485ms
+2026-04-07 15:41:02.969 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes/archive - null null
+2026-04-07 15:41:02.980 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:02.983 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes)'
+2026-04-07 15:41:02.986 +05:30 [INF] Route matched with {action = "GetArchiveNotes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArchiveNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:41:02.994 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[UserId] = @__userId_0 AND [n].[IsArchived] = CAST(1 AS bit)
+2026-04-07 15:41:03.000 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:41:03.004 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes) in 12.1317ms
+2026-04-07 15:41:03.011 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes)'
+2026-04-07 15:41:03.014 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes/archive - 200 null application/json; charset=utf-8 45.0101ms
+2026-04-07 15:41:04.506 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes/archive/5 - null null
+2026-04-07 15:41:04.512 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:04.514 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes/archive/5 - 204 null null 8.6192ms
+2026-04-07 15:41:04.517 +05:30 [INF] Request starting HTTP/2 PATCH https://localhost:7119/api/notes/archive/5 - application/json 2
+2026-04-07 15:41:04.528 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:04.531 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.ToggleArchive (fundooNotes)'
+2026-04-07 15:41:04.534 +05:30 [INF] Route matched with {action = "ToggleArchive", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ToggleArchive(Int32) on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:41:04.548 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__noteId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[NoteId] = @__noteId_0 AND [n].[UserId] = @__userId_1
+2026-04-07 15:41:04.557 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Notes] SET [IsArchived] = @p0
+OUTPUT 1
+WHERE [NoteId] = @p1;
+2026-04-07 15:41:04.562 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 15:41:04.566 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.ToggleArchive (fundooNotes) in 25.4545ms
+2026-04-07 15:41:04.569 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.ToggleArchive (fundooNotes)'
+2026-04-07 15:41:04.572 +05:30 [INF] Request finished HTTP/2 PATCH https://localhost:7119/api/notes/archive/5 - 200 null application/json; charset=utf-8 55.0119ms
+2026-04-07 15:41:04.577 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes/archive - null null
+2026-04-07 15:41:04.586 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:04.589 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes)'
+2026-04-07 15:41:04.592 +05:30 [INF] Route matched with {action = "GetArchiveNotes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArchiveNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:41:04.597 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[UserId] = @__userId_0 AND [n].[IsArchived] = CAST(1 AS bit)
+2026-04-07 15:41:04.601 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:41:04.605 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes) in 9.4567ms
+2026-04-07 15:41:04.610 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes)'
+2026-04-07 15:41:04.612 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes/archive - 200 null application/json; charset=utf-8 35.467ms
+2026-04-07 15:41:06.150 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes - null null
+2026-04-07 15:41:06.159 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:06.161 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes - 204 null null 11.1545ms
+2026-04-07 15:41:06.171 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes - null null
+2026-04-07 15:41:06.181 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:06.184 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:41:06.186 +05:30 [INF] Route matched with {action = "GetAllNotes", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:41:06.200 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE ([n].[UserId] = @__userId_0 OR EXISTS (
+    SELECT 1
+    FROM [Collaborators] AS [c]
+    WHERE [c].[UserId] = @__userId_0)) AND [n].[IsTrash] = CAST(0 AS bit) AND [n].[IsArchived] = CAST(0 AS bit)
+2026-04-07 15:41:06.206 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:41:06.211 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes) in 17.9494ms
+2026-04-07 15:41:06.214 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:41:06.216 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes - 200 null application/json; charset=utf-8 45.743ms
+2026-04-07 15:41:17.192 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes - null null
+2026-04-07 15:41:17.198 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:17.201 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes - 204 null null 8.7716ms
+2026-04-07 15:41:17.213 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes - null null
+2026-04-07 15:41:17.203 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes/archive - null null
+2026-04-07 15:41:17.224 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:17.230 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:17.232 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:41:17.233 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes/archive - 204 null null 30.8443ms
+2026-04-07 15:41:17.236 +05:30 [INF] Route matched with {action = "GetAllNotes", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:41:17.239 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes/archive - null null
+2026-04-07 15:41:17.263 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:17.265 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes)'
+2026-04-07 15:41:17.266 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:41:17.268 +05:30 [INF] Route matched with {action = "GetArchiveNotes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArchiveNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:41:17.271 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes) in 20.0978ms
+2026-04-07 15:41:17.279 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[UserId] = @__userId_0 AND [n].[IsArchived] = CAST(1 AS bit)
+2026-04-07 15:41:17.281 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:41:17.285 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:41:17.288 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes - 200 null application/json; charset=utf-8 75.2745ms
+2026-04-07 15:41:17.293 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes) in 15.2457ms
+2026-04-07 15:41:17.304 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes)'
+2026-04-07 15:41:17.308 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes/archive - 200 null application/json; charset=utf-8 69.4375ms
+2026-04-07 15:41:20.221 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes/archive - null null
+2026-04-07 15:41:20.228 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:20.230 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes)'
+2026-04-07 15:41:20.236 +05:30 [INF] Route matched with {action = "GetArchiveNotes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArchiveNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:41:20.247 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[UserId] = @__userId_0 AND [n].[IsArchived] = CAST(1 AS bit)
+2026-04-07 15:41:20.252 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:41:20.257 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes) in 12.6644ms
+2026-04-07 15:41:20.261 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes)'
+2026-04-07 15:41:20.264 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes/archive - 200 null application/json; charset=utf-8 42.5531ms
+2026-04-07 15:41:21.980 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes - null null
+2026-04-07 15:41:21.987 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:21.991 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:41:21.994 +05:30 [INF] Route matched with {action = "GetAllNotes", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:41:22.013 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:41:22.019 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes) in 16.5882ms
+2026-04-07 15:41:22.027 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:41:22.031 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes - 200 null application/json; charset=utf-8 50.8502ms
+2026-04-07 15:41:24.841 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes - null null
+2026-04-07 15:41:24.852 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:24.861 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes - 204 null null 20.5314ms
+2026-04-07 15:41:24.871 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes - null null
+2026-04-07 15:41:24.888 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:24.891 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:41:24.897 +05:30 [INF] Route matched with {action = "GetAllNotes", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:41:24.907 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:41:24.911 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes) in 9.4702ms
+2026-04-07 15:41:24.916 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:41:24.919 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes - 200 null application/json; charset=utf-8 49.4019ms
+2026-04-07 15:41:27.581 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes/trash - null null
+2026-04-07 15:41:27.589 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:27.592 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes/trash - 204 null null 11.9721ms
+2026-04-07 15:41:27.601 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes/trash - null null
+2026-04-07 15:41:27.624 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:27.627 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetTrashNotes (fundooNotes)'
+2026-04-07 15:41:27.630 +05:30 [INF] Route matched with {action = "GetTrashNotes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetTrashNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:41:27.635 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[UserId] = @__userId_0 AND [n].[IsTrash] = CAST(1 AS bit)
+2026-04-07 15:41:27.642 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:41:27.645 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetTrashNotes (fundooNotes) in 11.0027ms
+2026-04-07 15:41:27.648 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetTrashNotes (fundooNotes)'
+2026-04-07 15:41:27.650 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes/trash - 200 null application/json; charset=utf-8 49.3789ms
+2026-04-07 15:41:29.545 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes/archive - null null
+2026-04-07 15:41:29.554 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:29.557 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes/archive - 204 null null 11.703ms
+2026-04-07 15:41:29.572 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes/archive - null null
+2026-04-07 15:41:29.581 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:29.584 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes)'
+2026-04-07 15:41:29.593 +05:30 [INF] Route matched with {action = "GetArchiveNotes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArchiveNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:41:29.601 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[UserId] = @__userId_0 AND [n].[IsArchived] = CAST(1 AS bit)
+2026-04-07 15:41:29.608 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:41:29.612 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes) in 13.7532ms
+2026-04-07 15:41:29.616 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes)'
+2026-04-07 15:41:29.618 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes/archive - 200 null application/json; charset=utf-8 47.4643ms
+2026-04-07 15:41:30.632 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes - null null
+2026-04-07 15:41:30.640 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:30.642 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes - 204 null null 10.7328ms
+2026-04-07 15:41:30.648 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes/archive - null null
+2026-04-07 15:41:30.658 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes - null null
+2026-04-07 15:41:30.677 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:30.683 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:30.685 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes)'
+2026-04-07 15:41:30.689 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:41:30.691 +05:30 [INF] Route matched with {action = "GetArchiveNotes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArchiveNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:41:30.694 +05:30 [INF] Route matched with {action = "GetAllNotes", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:41:30.701 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[UserId] = @__userId_0 AND [n].[IsArchived] = CAST(1 AS bit)
+2026-04-07 15:41:30.709 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:41:30.714 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:41:30.717 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes) in 13.2895ms
+2026-04-07 15:41:30.723 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes) in 24.2138ms
+2026-04-07 15:41:30.726 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:41:30.729 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes)'
+2026-04-07 15:41:30.731 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes - 200 null application/json; charset=utf-8 73.3415ms
+2026-04-07 15:41:30.734 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes/archive - 200 null application/json; charset=utf-8 86.1082ms
+2026-04-07 15:41:32.955 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes/archive/1012 - null null
+2026-04-07 15:41:32.960 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:32.962 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes/archive/1012 - 204 null null 7.1244ms
+2026-04-07 15:41:32.966 +05:30 [INF] Request starting HTTP/2 PATCH https://localhost:7119/api/notes/archive/1012 - application/json 2
+2026-04-07 15:41:32.975 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:32.978 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.ToggleArchive (fundooNotes)'
+2026-04-07 15:41:32.981 +05:30 [INF] Route matched with {action = "ToggleArchive", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ToggleArchive(Int32) on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:41:32.993 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__noteId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[NoteId] = @__noteId_0 AND [n].[UserId] = @__userId_1
+2026-04-07 15:41:33.003 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Notes] SET [IsArchived] = @p0
+OUTPUT 1
+WHERE [NoteId] = @p1;
+2026-04-07 15:41:33.009 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 15:41:33.013 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.ToggleArchive (fundooNotes) in 26.8495ms
+2026-04-07 15:41:33.016 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.ToggleArchive (fundooNotes)'
+2026-04-07 15:41:33.019 +05:30 [INF] Request finished HTTP/2 PATCH https://localhost:7119/api/notes/archive/1012 - 200 null application/json; charset=utf-8 54.1041ms
+2026-04-07 15:41:33.025 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes/archive - null null
+2026-04-07 15:41:33.025 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes - null null
+2026-04-07 15:41:33.032 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:33.038 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:33.040 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes)'
+2026-04-07 15:41:33.042 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:41:33.044 +05:30 [INF] Route matched with {action = "GetArchiveNotes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArchiveNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:41:33.046 +05:30 [INF] Route matched with {action = "GetAllNotes", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:41:33.051 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[UserId] = @__userId_0 AND [n].[IsArchived] = CAST(1 AS bit)
+2026-04-07 15:41:33.063 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:41:33.067 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes) in 16.9353ms
+2026-04-07 15:41:33.071 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes)'
+2026-04-07 15:41:33.072 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE ([n].[UserId] = @__userId_0 OR EXISTS (
+    SELECT 1
+    FROM [Collaborators] AS [c]
+    WHERE [c].[UserId] = @__userId_0)) AND [n].[IsTrash] = CAST(0 AS bit) AND [n].[IsArchived] = CAST(0 AS bit)
+2026-04-07 15:41:33.074 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes/archive - 200 null application/json; charset=utf-8 49.0254ms
+2026-04-07 15:41:33.080 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:41:33.089 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes) in 34.6774ms
+2026-04-07 15:41:33.092 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:41:33.095 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes - 200 null application/json; charset=utf-8 69.9392ms
+2026-04-07 15:41:34.655 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes/pin/1012 - null null
+2026-04-07 15:41:34.660 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:34.661 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes/pin/1012 - 204 null null 6.6162ms
+2026-04-07 15:41:34.665 +05:30 [INF] Request starting HTTP/2 PATCH https://localhost:7119/api/notes/pin/1012 - application/json 2
+2026-04-07 15:41:34.676 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:34.678 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.TogglePin (fundooNotes)'
+2026-04-07 15:41:34.681 +05:30 [INF] Route matched with {action = "TogglePin", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TogglePin(Int32) on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:41:34.692 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__noteId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[NoteId] = @__noteId_0 AND [n].[UserId] = @__userId_1
+2026-04-07 15:41:34.706 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Notes] SET [IsPin] = @p0
+OUTPUT 1
+WHERE [NoteId] = @p1;
+2026-04-07 15:41:34.712 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 15:41:34.716 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.TogglePin (fundooNotes) in 29.9405ms
+2026-04-07 15:41:34.720 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.TogglePin (fundooNotes)'
+2026-04-07 15:41:34.723 +05:30 [INF] Request finished HTTP/2 PATCH https://localhost:7119/api/notes/pin/1012 - 200 null application/json; charset=utf-8 58.961ms
+2026-04-07 15:41:34.731 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes/archive - null null
+2026-04-07 15:41:34.730 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes - null null
+2026-04-07 15:41:34.740 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:34.745 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:34.747 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes/archive - 204 null null 15.7044ms
+2026-04-07 15:41:34.750 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes/archive - null null
+2026-04-07 15:41:34.750 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:41:34.762 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:34.763 +05:30 [INF] Route matched with {action = "GetAllNotes", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:41:34.765 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes)'
+2026-04-07 15:41:34.773 +05:30 [INF] Route matched with {action = "GetArchiveNotes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArchiveNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:41:34.774 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE ([n].[UserId] = @__userId_0 OR EXISTS (
+    SELECT 1
+    FROM [Collaborators] AS [c]
+    WHERE [c].[UserId] = @__userId_0)) AND [n].[IsTrash] = CAST(0 AS bit) AND [n].[IsArchived] = CAST(0 AS bit)
+2026-04-07 15:41:34.778 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [n].[NoteId], [n].[Colour], [n].[CreatedDate], [n].[Description], [n].[Image], [n].[IsArchived], [n].[IsPin], [n].[IsTrash], [n].[LastModifiedAt], [n].[Reminder], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[UserId] = @__userId_0 AND [n].[IsArchived] = CAST(1 AS bit)
+2026-04-07 15:41:34.782 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:41:34.785 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:41:34.788 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes) in 20.7089ms
+2026-04-07 15:41:34.791 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes) in 14.1907ms
+2026-04-07 15:41:34.793 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:41:34.796 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetArchiveNotes (fundooNotes)'
+2026-04-07 15:41:34.798 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes - 200 null application/json; charset=utf-8 67.6185ms
+2026-04-07 15:41:34.800 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes/archive - 200 null application/json; charset=utf-8 49.4239ms
+2026-04-07 15:41:37.070 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes - null null
+2026-04-07 15:41:37.078 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:37.080 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes - 204 null null 9.538ms
+2026-04-07 15:41:37.093 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes - null null
+2026-04-07 15:41:37.106 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:37.109 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:41:37.111 +05:30 [INF] Route matched with {action = "GetAllNotes", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:41:37.121 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:41:37.126 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes) in 9.9596ms
+2026-04-07 15:41:37.130 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:41:37.133 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes - 200 null application/json; charset=utf-8 40.2152ms
+2026-04-07 15:41:48.482 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7119/api/notes - null null
+2026-04-07 15:41:48.499 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:48.503 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7119/api/notes - 204 null null 20.3266ms
+2026-04-07 15:41:48.512 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/api/notes - null null
+2026-04-07 15:41:48.524 +05:30 [INF] CORS policy execution successful.
+2026-04-07 15:41:48.526 +05:30 [INF] Executing endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:41:48.529 +05:30 [INF] Route matched with {action = "GetAllNotes", controller = "Notes"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllNotes() on controller fundooNotes.Controllers.NotesController (fundooNotes).
+2026-04-07 15:41:48.541 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[fundooNotes.DTOs.Notes.NoteResponseDTO, fundooNotes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-07 15:41:48.544 +05:30 [INF] Executed action fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes) in 10.4041ms
+2026-04-07 15:41:48.548 +05:30 [INF] Executed endpoint 'fundooNotes.Controllers.NotesController.GetAllNotes (fundooNotes)'
+2026-04-07 15:41:48.552 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/api/notes - 200 null application/json; charset=utf-8 39.8296ms
